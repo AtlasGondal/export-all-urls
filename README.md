@@ -33,9 +33,9 @@ The data can be categorized before extraction, by their post types.
 - PHP version 5.4 or higher
 - WordPress version 3.1.0 or higher
 
-If you found any bug then [report here][website], I’ll try to fix it as soon as possible! 
+If you found any bug then [report here][contact], I’ll try to fix it as soon as possible! 
 
-**\*Screenshots and further guide about plugin installation can be found on [wordpress repository][plugin-url]**
+**\* Screenshots and further guide about plugin installation can be found on [wordpress repository][plugin-url]**
 
 ## Connect with me:
 
@@ -48,7 +48,8 @@ If you found any bug then [report here][website], I’ll try to fix it as soon a
 <br/><br/>
 
 
-[website]: https://AtlasGondal.com/
+[contact]: https://atlasgondal.com/contact-me/?utm_source=self&utm_medium=github&utm_campaign=export-all-urls&utm_term=description
+[website]: https://atlasgondal.com/?utm_source=self&utm_medium=github&utm_campaign=export-all-urls&utm_term=description
 [github]: https://github.com/AtlasGondal/
 [twitter]: https://twitter.com/Atlas_Gondal/
 [youtube]: https://www.youtube.com/AtlasGondal/
