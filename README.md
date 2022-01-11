@@ -1,4 +1,4 @@
-[![Export-All-URLs](https://socialify.git.ci/AtlasGondal/Export-All-URLs/image?description=1&font=KoHo&forks=1&issues=1&language=1&logo=https%3A%2F%2Fps.w.org%2Fexport-all-urls%2Fassets%2Ficon-256x256.png&name=1&owner=1&pattern=Diagonal%20Stripes&pulls=1&stargazers=1&theme=Light)][plugin-url]
+[![export-all-urls](https://socialify.git.ci/AtlasGondal/export-all-urls/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Fwordpress%2Fwordpress-original.svg&owner=1&pattern=Diagonal%20Stripes&pulls=1&stargazers=1)][plugin-url]
 
 # Export All URLs
 tiny useful URL exporter plugin for wordpress websites
