@@ -264,6 +264,8 @@ function eau_export_data($urls, $export_type, $csv_path, $csv_name)
             $file = $csv_path . $csv_name . '.CSV';
             $myfile = @fopen($file, "w") or die("Unable to create a file on your server!");
             fprintf($myfile, "\xEF\xBB\xBF");
+            
+            $csv_url = esc_url($file_path['url'] . "/" . $csv_name . ".CSV");
 
             $headers[] = 'Post ID';
             $headers[] = 'Title';
@@ -285,7 +287,7 @@ function eau_export_data($urls, $export_type, $csv_path, $csv_name)
 
             fclose($myfile);
 
-            echo "<div class='updated' style='width: 97%'>Data exported successfully! <a href='" . $file_path['baseurl'] . "/" . $csv_name . ".CSV' target='_blank'><strong>Click here</strong></a> to Download.</div>";
+            echo "<div class='updated' style='width: 97%'>Data exported successfully! <a href='". $csv_url . "' target='_blank'><strong>Click here</strong></a> to Download.</div>";
             echo "<div class='notice notice-warning' style='width: 97%'>Once you have downloaded the file, it is recommended to delete file from the server, for security reasons. <a href='".wp_nonce_url(admin_url('tools.php?page=extract-all-urls-settings&del=y&f=').base64_encode($file))."' ><strong>Click Here</strong></a> to delete the file. And don't worry, you can always regenerate anytime. :)</div>";
             echo "<div class='notice notice-info' style='width: 97%'><strong>Total</strong> number of links: <strong>".$count."</strong>.</div>";
 
