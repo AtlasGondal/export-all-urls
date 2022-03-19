@@ -399,10 +399,10 @@ function eau_generate_html()
 
         if (!empty($_POST['post-type']) && !empty($_POST['export-type']) && !empty($_POST['additional-data']) && !empty($_POST['post-status']) && !empty($_POST['post-author']) && !empty($_POST['number-of-posts'])) {
 
-            $post_type = $_POST['post-type'];
-            $export_type = $_POST['export-type'];
-            $additional_data = $_POST['additional-data'];
-            $post_status = $_POST['post-status'];
+            $post_type = sanitize_text_field($_POST['post-type']);
+            $export_type = sanitize_text_field($_POST['export-type']);
+            $additional_data = ($_POST['additional-data']);
+            $post_status = sanitize_text_field($_POST['post-status']);
             $post_author = $_POST['post-author'];
             $remove_woo_attributes = isset($_POST['remove-woo-attributes']) ? $_POST['remove-woo-attributes'] : null;
             $exclude_domain = isset($_POST['exclude-domain']) ? $_POST['exclude-domain'] : null;
