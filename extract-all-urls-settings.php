@@ -1,6 +1,5 @@
 <?php
-
-require_once(plugin_dir_path(__FILE__) . 'functions.php');
+require_once (plugin_dir_path(__FILE__) . 'functions.php');
 
 /**
  *
@@ -8,7 +7,8 @@ require_once(plugin_dir_path(__FILE__) . 'functions.php');
 function eau_generate_html()
 {
 
-    if (!current_user_can('manage_options')) {
+    if (!current_user_can('manage_options'))
+    {
         wp_die(__('You do not have sufficient permissions to access this page.'));
     }
 
@@ -28,24 +28,29 @@ function eau_generate_html()
 
     $post_types = get_post_types($args, $output, $operator);
 
-    foreach ($post_types as $post_type) {
+    foreach ($post_types as $post_type)
+    {
 
         $custom_posts_names[] = $post_type->name;
-        $custom_posts_labels[] = $post_type->labels->singular_name;
+        $custom_posts_labels[] = $post_type
+            ->labels->singular_name;
 
     }
 
     $users = get_users();
 
-    foreach ($users as $user) {
-        $user_ids[] = $user->data->ID;
-        $user_names[] = $user->data->user_login;
+    foreach ($users as $user)
+    {
+        $user_ids[] = $user
+            ->data->ID;
+        $user_names[] = $user
+            ->data->user_login;
     }
 
     $file_path = wp_upload_dir();
     $file_name = 'export-all-urls-' . rand(111111, 999999);
 
-    ?>
+?>
 
     <div class="wrap">
 
@@ -72,13 +77,14 @@ function eau_generate_html()
                                     <label><input type="radio" name="post-type" value="post" required="required"/> Posts</label><br/>
 
                                     <?php
-
-                                    if (!empty($custom_posts_names) && !empty($custom_posts_labels)) {
-                                        for ($i = 0; $i < count($custom_posts_names); $i++) {
-                                            echo '<label><input type="radio" name="post-type" value="' . $custom_posts_names[$i] . '" required="required" /> ' . $custom_posts_labels[$i] . ' Posts</label><br>';
-                                        }
-                                    }
-                                    ?>
+    if (!empty($custom_posts_names) && !empty($custom_posts_labels))
+    {
+        for ($i = 0;$i < count($custom_posts_names);$i++)
+        {
+            echo '<label><input type="radio" name="post-type" value="' . $custom_posts_names[$i] . '" required="required" /> ' . $custom_posts_labels[$i] . ' Posts</label><br>';
+        }
+    }
+?>
 
                                 </td>
 
@@ -155,13 +161,14 @@ function eau_generate_html()
                                     <label><input type="radio" name="post-author" checked value="all"
                                                   required="required"/> All</label><br/>
                                     <?php
-
-                                    if (!empty($user_ids) && !empty($user_names)) {
-                                        for ($i = 0; $i < count($user_ids); $i++) {
-                                            echo '<label><input type="radio" name="post-author" value="' . $user_ids[$i] . '" required="required" /> ' . $user_names[$i] . '</label><br>';
-                                        }
-                                    }
-                                    ?>
+    if (!empty($user_ids) && !empty($user_names))
+    {
+        for ($i = 0;$i < count($user_ids);$i++)
+        {
+            echo '<label><input type="radio" name="post-author" value="' . $user_ids[$i] . '" required="required" /> ' . $user_names[$i] . '</label><br>';
+        }
+    }
+?>
 
                                 </td>
 
@@ -221,17 +228,15 @@ function eau_generate_html()
 
                             <tr class="advance-options" style="display: none">
 
-                                <th>CSV File Path:</th>
+                                <th>CSV File Name: </th>
 
                                 <td>
 
-                                    <label><span
-                                                style="cursor: not-allowed; -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
-                                                unselectable="on" onselectstart="return false;"
-                                                onmousedown="return false;"><?php echo get_home_path(); ?>wp-content/uploads</span><input
+                                    <label><input
                                                 type="text" name="csv-file-name" placeholder="An Error Occured"
-                                                value="<?php echo $file_path['subdir'] . "/" . $file_name; ?>"
+                                                value="<?php echo $file_name; ?>"
                                                 size="30%"/></label><br/>
+                                                <code><?php echo $file_path['path']; ?></code>
 
 
                                 </td>
@@ -265,7 +270,7 @@ function eau_generate_html()
                             </tr>
 
                         </table>
-
+                        <?php wp_nonce_field('export_urls'); ?>
 
                     </form>
 
@@ -394,85 +399,112 @@ function eau_generate_html()
 
 
     <?php
+    if (isset($_POST['export']))
+    {
 
-    if (isset($_POST['export'])) {
-
-        if (!empty($_POST['post-type']) && !empty($_POST['export-type']) && !empty($_POST['additional-data']) && !empty($_POST['post-status']) && !empty($_POST['post-author']) && !empty($_POST['number-of-posts'])) {
-
-            $post_type = sanitize_text_field($_POST['post-type']);
-            $export_type = sanitize_text_field($_POST['export-type']);
-            $additional_data = ($_POST['additional-data']);
-            $post_status = sanitize_text_field($_POST['post-status']);
-            $post_author = $_POST['post-author'];
-            $remove_woo_attributes = isset($_POST['remove-woo-attributes']) ? $_POST['remove-woo-attributes'] : null;
-            $exclude_domain = isset($_POST['exclude-domain']) ? $_POST['exclude-domain'] : null;
-            $number_of_posts = $_POST['number-of-posts'];
-            $csv_name = $_POST['csv-file-name'];
-
-            $csv_path = $file_path['basedir'];
-
-            if ($number_of_posts == "range") {
-                $offset = $_POST['starting-point'];
-                $post_per_page = $_POST['ending-point'];
-
-                if (!isset($offset) || !isset($post_per_page)) {
-                    echo "Sorry, you didn't specify starting and ending post range. Please <strong>Set Post Range</strong> OR <strong>Select All</strong> and try again! :)";
-                    exit;
-                }
-
-                $post_per_page = $post_per_page - $offset;
-
-
-            } else {
-                $offset = 'all';
-                $post_per_page = 'all';
+        if (isset($_REQUEST['_wpnonce']))
+        {
+            $nonce = $_REQUEST['_wpnonce'];
+            if (!wp_verify_nonce($nonce, 'export_urls'))
+            {
+                echo "<div class='notice notice-error' style='width: 93%'>Security token validation failed!</div>";
+                exit;
             }
 
-            if ($export_type == 'text') {
-                if (empty($csv_name) || empty($csv_path)) {
-                    echo "Invalid/Missing CSV File Path!";
-                    exit;
+            if (!empty($_POST['post-type']) && !empty($_POST['export-type']) && !empty($_POST['additional-data']) && !empty($_POST['post-status']) && !empty($_POST['post-author']) && !empty($_POST['number-of-posts']))
+            {
+
+                $post_type = sanitize_text_field($_POST['post-type']);
+                $export_type = sanitize_text_field($_POST['export-type']);
+                $additional_data = map_deep($_POST['additional-data'], 'sanitize_text_field');
+                $post_status = sanitize_text_field($_POST['post-status']);
+                $post_author = sanitize_text_field($_POST['post-author']);
+                $remove_woo_attributes = isset($_POST['remove-woo-attributes']) ? sanitize_text_field($_POST['remove-woo-attributes']) : null;
+                $exclude_domain = isset($_POST['exclude-domain']) ? sanitize_text_field($_POST['exclude-domain']) : null;
+                $number_of_posts = sanitize_text_field($_POST['number-of-posts']);
+                $csv_name = sanitize_file_name($_POST['csv-file-name']);
+
+                if ($number_of_posts == "range")
+                {
+                    $offset = absint($_POST['starting-point']);
+                    $post_per_page = absint($_POST['ending-point']);
+
+                    if (!isset($offset) || !isset($post_per_page))
+                    {
+                        echo "Sorry, you didn't specify starting and ending post range. Please <strong>Set Post Range</strong> OR <strong>Select All</strong> and try again! :)";
+                        exit;
+                    }
+
+                    $post_per_page = $post_per_page - $offset;
+
                 }
-            }
-
-            $posts_from = $_POST['posts-from'];
-            $posts_upto = $_POST['posts-upto'];
-
-            if (!empty($posts_from) && !empty($posts_upto)) {
-
-                if ($posts_from > $posts_upto) {
-                    echo "Sorry, invalid post date range. :)";
-                    exit;
+                else
+                {
+                    $offset = 'all';
+                    $post_per_page = 'all';
                 }
 
-            } else {
-                $posts_from = '';
-                $posts_upto = '';
+                if ($export_type == 'text')
+                {
+                    if (empty($csv_name))
+                    {
+                        echo "Invalid/Missing CSV File Name!";
+                        exit;
+                    }
+                }
+
+                $posts_from = sanitize_file_name($_POST['posts-from']);
+                $posts_upto = sanitize_file_name($_POST['posts-upto']);
+
+                if (!empty($posts_from) && !empty($posts_upto))
+                {
+
+                    if ($posts_from > $posts_upto)
+                    {
+                        echo "Sorry, invalid post date range. :)";
+                        exit;
+                    }
+
+                }
+                else
+                {
+                    $posts_from = '';
+                    $posts_upto = '';
+                }
+
+                $selected_post_type = eau_get_selected_post_type($post_type, $custom_posts_names);
+
+                eau_generate_output($selected_post_type, $post_status, $post_author, $remove_woo_attributes, $exclude_domain, $post_per_page, $offset, $export_type, $additional_data, $csv_name, $posts_from, $posts_upto);
+
             }
-
-
-            $selected_post_type = eau_get_selected_post_type($post_type, $custom_posts_names);
-
-            eau_generate_output($selected_post_type, $post_status, $post_author, $remove_woo_attributes, $exclude_domain, $post_per_page, $offset, $export_type, $additional_data, $csv_path, $csv_name, $posts_from, $posts_upto);
-
-        }else{
-            echo "<div class='notice notice-error' style='width: 93%'>Sorry, you missed something, Please recheck above options, especially <strong>Export Fields</strong> and try again! :)</div>";
+            else
+            {
+                echo "<div class='notice notice-error' style='width: 93%'>Sorry, you missed something, Please recheck above options, especially <strong>Export Fields</strong> and try again! :)</div>";
+                exit;
+            }
+        }
+        else
+        {
+            echo "<div class='notice notice-error' style='width: 93%'>Verification token is missing!</div>";
             exit;
         }
 
     }
-    elseif (isset($_REQUEST['del']) && $_REQUEST['del'] == 'y') {
-        if(!isset($_REQUEST['_wpnonce']) || !wp_verify_nonce($_GET['_wpnonce'])){
+    elseif (isset($_REQUEST['del']) && $_REQUEST['del'] == 'y')
+    {
+        if (!isset($_REQUEST['_wpnonce']) || !wp_verify_nonce($_GET['_wpnonce']))
+        {
             echo "You are not authorized to perform this action!";
             exit();
-        }else{
+        }
+        else
+        {
             $file = base64_decode($_REQUEST['f']);
             echo !empty($file) ? file_exists($file) ? !unlink($file) ? "<div class='notice notice-error' style='width: 97%'></div>Unable to delete file, please delete it manually!" : "<div class='updated' style='width: 97%'>You did great, the file was <strong>Deleted Successfully</strong>!</div>" : null : "<div class='notice notice-error'>Missing file path.</div>";
         }
 
     }
-
+    
 }
 
 eau_generate_html();
-
