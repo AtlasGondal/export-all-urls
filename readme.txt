@@ -130,6 +130,10 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 
 == Changelog ==
 
+= 4.4 =
+* Added - additional verification for file removal to patch a security issue
+* Compatibility - tested with wordpress 6.0.1
+
 = 4.3 =
 * Added - overall security and stability improvements
 * Compatibility - tested with wordpress 5.9.2
@@ -209,3 +213,6 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 * Added - overall security and stability improvements
 * Compatibility - tested with wordpress 5.9.2
 
+= 4.4 =
+* Added - additional verification for file removal to patch a security issue
+* Compatibility - tested with wordpress 6.0.1
