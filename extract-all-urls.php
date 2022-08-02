@@ -4,7 +4,7 @@
 Plugin Name: Export All URLs
 Plugin URI: https://AtlasGondal.com/
 Description: This plugin allows you to extract Title, URL and Categories of builtin post types (e.g post, page) or any other custom post type available on your site. You can write output in the dashboard or export as CSV file. It can be very useful during migration, seo analysis and security audit.
-Version: 4.3
+Version: 4.4
 Author: Atlas Gondal
 Author URI: https://AtlasGondal.com/
 License: GPL v2 or higher
