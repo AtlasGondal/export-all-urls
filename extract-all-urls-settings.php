@@ -500,7 +500,14 @@ function eau_generate_html()
         else
         {
             $file = base64_decode($_REQUEST['f']);
-            echo !empty($file) ? file_exists($file) ? !unlink($file) ? "<div class='notice notice-error' style='width: 97%'></div>Unable to delete file, please delete it manually!" : "<div class='updated' style='width: 97%'>You did great, the file was <strong>Deleted Successfully</strong>!</div>" : null : "<div class='notice notice-error'>Missing file path.</div>";
+            $path_info = pathinfo($file);
+            $upload_dir = wp_upload_dir();
+
+            if (($path_info['dirname'] == $upload_dir['path']) && ($path_info['extension'] == 'CSV')) {
+                echo !empty($file) ? file_exists($file) ? !unlink($file) ? "<div class='notice notice-error' style='width: 97%'></div>Unable to delete file, please delete it manually!" : "<div class='updated' style='width: 97%'>You did great, the file was <strong>Deleted Successfully</strong>!</div>" : null : "<div class='notice notice-error'>Missing file path.</div>";
+            } else {
+                die("<div class='error' style='width: 95.3%; margin-left: 2px;'>Sorry, the file verification failed. Arbitrary file removal is not allowed.</div>");
+            }
         }
 
     }
