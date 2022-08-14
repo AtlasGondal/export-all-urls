@@ -9,7 +9,7 @@ function eau_generate_html()
 
     if (!current_user_can('manage_options'))
     {
-        wp_die(__('You do not have sufficient permissions to access this page.'));
+        wp_die(__('You do not have sufficient permissions to access this page.', 'export-all-urls'));
     }
 
     $custom_posts_names = array();
@@ -54,7 +54,7 @@ function eau_generate_html()
 
     <div class="wrap">
 
-        <h2 align="center">Export Data from your Site</h2>
+        <h2 align="center"><?php esc_html_e( 'Export Data from your Site', 'export-all-urls' ); ?></h2>
 
         <div class="eauWrapper">
             <div id="eauMainContainer" class="postbox eaucolumns">
@@ -67,14 +67,13 @@ function eau_generate_html()
 
                             <tr>
 
-                                <th>Select a Post Type to Extract Data: </th>
+                                <th><?php esc_html_e( 'Select a Post Type to Extract Data: ', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label><input type="radio" name="post-type" value="any" required="required" checked /> All
-                                        Types (pages, posts, and custom post types)</label><br/>
-                                    <label><input type="radio" name="post-type" value="page" required="required"/> Pages</label><br/>
-                                    <label><input type="radio" name="post-type" value="post" required="required"/> Posts</label><br/>
+                                    <label><input type="radio" name="post-type" value="any" required="required" checked /><?php esc_html_e( 'All Types (pages, posts, and custom post types)', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-type" value="page" required="required"/><?php esc_html_e( 'Pages', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-type" value="post" required="required"/><?php esc_html_e( 'Posts', 'export-all-urls' ); ?></label><br/>
 
                                     <?php
     if (!empty($custom_posts_names) && !empty($custom_posts_labels))
@@ -92,17 +91,14 @@ function eau_generate_html()
 
                             <tr>
 
-                                <th>Export Fields:</th>
+                                <th><?php esc_html_e( 'Export Fields:', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label><input type="checkbox" name="additional-data[]" value="postIDs"/>
-                                        Post IDs</label><br/>
-                                    <label><input type="checkbox" name="additional-data[]" checked value="title"/>
-                                        Titles</label><br/>
-                                    <label><input type="checkbox" name="additional-data[]" value="url"/>
-                                        URLs</label><br/>
-                                    <label><input type="checkbox" name="additional-data[]" value="category"/> Categories</label><br/>
+                                    <label><input type="checkbox" name="additional-data[]" value="postIDs"/><?php esc_html_e( 'Post IDs', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="checkbox" name="additional-data[]" checked value="title"/><?php esc_html_e( 'Titles', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="checkbox" name="additional-data[]" value="url"/><?php esc_html_e( 'URLs', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="checkbox" name="additional-data[]" value="category"/><?php esc_html_e( 'Categories', 'export-all-urls' ); ?></label><br/>
 
                                 </td>
 
@@ -110,21 +106,17 @@ function eau_generate_html()
 
                             <tr>
 
-                                <th>Post Status:</th>
+                                <th><?php esc_html_e( 'Post Status:', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label><input type="radio" name="post-status" checked value="publish"/>
-                                        Published</label><br/>
-                                    <label><input type="radio" name="post-status" value="pending"/> Pending</label><br/>
-                                    <label><input type="radio" name="post-status" value="draft"/> Draft & Auto
-                                        Draft</label><br/>
-                                    <label><input type="radio" name="post-status" value="future"/> Future
-                                        Scheduled</label><br/>
-                                    <label><input type="radio" name="post-status" value="private"/> Private</label><br/>
-                                    <label><input type="radio" name="post-status" value="trash"/> Trashed</label><br/>
-                                    <label><input type="radio" name="post-status" value="all"/> All (Published, Pending,
-                                        Draft, Future Scheduled, Private & Trash)</label><br/>
+                                    <label><input type="radio" name="post-status" checked value="publish"/><?php esc_html_e( 'Published', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-status" value="pending"/><?php esc_html_e( 'Pending', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-status" value="draft"/><?php esc_html_e( 'Draft & Auto Draft', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-status" value="future"/><?php esc_html_e( 'Future Scheduled', 'export-all-urls' ); ?> </label><br/>
+                                    <label><input type="radio" name="post-status" value="private"/><?php esc_html_e( 'Private', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-status" value="trash"/><?php esc_html_e( 'Trashed', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="post-status" value="all"/><?php esc_html_e( 'All (Published, Pending, Draft, Future Scheduled, Private & Trash)', 'export-all-urls' ); ?></label><br/>
 
                                 </td>
 
@@ -133,19 +125,19 @@ function eau_generate_html()
                             <tr>
                                 <th></th>
                                 <td><a href="#" id="moreFilterOptionsLabel"
-                                       onclick="moreFilterOptions(); return false;">Show Filter Options</a></td>
+                                       onclick="moreFilterOptions(); return false;"><?php esc_html_e( 'Show Filter Options', 'export-all-urls' ); ?></a></td>
                             </tr>
 
                             <tr class="filter-options" style="display: none">
 
-                                <th>Date Range:</th>
+                                <th><?php esc_html_e( 'Date Range:', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label>From:<input type="date" id="posts-from" name="posts-from"
+                                    <label><?php esc_html_e( 'From:', 'export-all-urls' ); ?> <input type="date" id="posts-from" name="posts-from"
                                                        onmouseleave="setMinValueForPostsUptoField()"
                                                        onfocusout="setMinValueForPostsUptoField()"/></label>
-                                    <label>To:<input type="date" id="posts-upto" name="posts-upto"/></label><br/>
+                                    <label><?php esc_html_e( 'To:', 'export-all-urls' ); ?> <input type="date" id="posts-upto" name="posts-upto"/></label><br/>
 
 
                                 </td>
@@ -154,12 +146,12 @@ function eau_generate_html()
 
                             <tr class="filter-options" style="display: none">
 
-                                <th>By Author:</th>
+                                <th><?php esc_html_e( 'By Author:', 'export-all-urls' ); ?></th>
 
                                 <td>
 
                                     <label><input type="radio" name="post-author" checked value="all"
-                                                  required="required"/> All</label><br/>
+                                                  required="required"/><?php echo esc_html_x( 'All', 'By Author','export-all-urls' ); ?></label><br/>
                                     <?php
     if (!empty($user_ids) && !empty($user_names))
     {
@@ -176,17 +168,16 @@ function eau_generate_html()
 
                             <tr>
                                 <th></th>
-                                <td><a href="#" id="advanceOptionsLabel" onclick="showAdvanceOptions(); return false;">Show
-                                        Advanced Options</a></td>
+                                <td><a href="#" id="advanceOptionsLabel" onclick="showAdvanceOptions(); return false;"><?php esc_html_e( 'Show Advanced Options', 'export-all-urls' ); ?></a></td>
                             </tr>
 
                             <tr class="advance-options" style="display: none">
 
-                                <th>Remove WooCommerce Extra Attributes: </th>
+                                <th><?php esc_html_e( 'Remove WooCommerce Extra Attributes:', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label><input type="checkbox" name="remove-woo-attributes" value="yes"/> Yes &nbsp;&nbsp;<code>WooCommerce stores product attributes along with product categories, by default plugin may extract those attributes and show as categories. That can be fixed by enabling this option.</code>
+                                    <label><input type="checkbox" name="remove-woo-attributes" value="yes"/><?php _e( 'Yes &nbsp;&nbsp;<code>WooCommerce stores product attributes along with product categories, by default plugin may extract those attributes and show as categories. That can be fixed by enabling this option.</code>', 'export-all-urls' ); ?>
 
                                 </td>
 
@@ -194,11 +185,11 @@ function eau_generate_html()
 
                             <tr class="advance-options" style="display: none">
 
-                                <th>Exclude Domain URL: </th>
+                                <th><?php esc_html_e( 'Exclude Domain URL: ', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label><input type="checkbox" name="exclude-domain" value="yes"/> Yes &nbsp;&nbsp;<code>Enabling this option will use relative URLs, by removing domain url (e.g. example.com/sample-post/ will become /sample-post/)</code>
+                                    <label><input type="checkbox" name="exclude-domain" value="yes"/><?php _e( 'Yes &nbsp;&nbsp;<code>Enabling this option will use relative URLs, by removing domain url (e.g. example.com/sample-post/ will become /sample-post/)</code>', 'export-all-urls' ); ?>
 
                                 </td>
 
@@ -206,20 +197,20 @@ function eau_generate_html()
 
                             <tr class="advance-options" style="display: none">
 
-                                <th>Number of Posts: <a href="#"
-                                                        title="Specify Post Range to Extract, It is very useful in case of Memory Out Error!"
+                                <th><?php esc_html_e( 'Number of Posts: ', 'export-all-urls' ); ?><a href="#"
+                                                        title="<?php esc_attr_e( 'Specify Post Range to Extract, It is very useful in case of Memory Out Error!', 'export-all-urls' ); ?>"
                                                         onclick="return false">?</a></th>
 
                                 <td>
 
                                     <label><input type="radio" name="number-of-posts" checked value="all"
-                                                  required="required" onclick="hideRangeFields()"/> All</label><br/>
+                                                  required="required" onclick="hideRangeFields()"/><?php echo esc_html_x( 'All', 'Number of Posts', 'export-all-urls' ); ?></label><br/>
                                     <label><input type="radio" name="number-of-posts" value="range" required="required"
-                                                  onclick="showRangeFields()"/> Specify Range</label><br/>
+                                                  onclick="showRangeFields()"/><?php esc_html_e( 'Specify Range', 'export-all-urls' ); ?></label><br/>
 
                                     <div id="postRange" style="display: none">
-                                        From: <input type="number" name="starting-point" placeholder="0">
-                                        To: <input type="number" name="ending-point" placeholder="500">
+                                        <?php echo esc_html_x( 'From:', 'Number of Posts', 'export-all-urls' ); ?> <input type="number" name="starting-point" placeholder="0">
+                                        <?php echo esc_html_x( 'To:', 'Number of Posts', 'export-all-urls' ); ?> <input type="number" name="ending-point" placeholder="500">
                                     </div>
 
                                 </td>
@@ -228,12 +219,12 @@ function eau_generate_html()
 
                             <tr class="advance-options" style="display: none">
 
-                                <th>CSV File Name: </th>
+                                <th><?php esc_html_e( 'CSV File Name: ', 'export-all-urls' ); ?></th>
 
                                 <td>
 
                                     <label><input
-                                                type="text" name="csv-file-name" placeholder="An Error Occured"
+                                                type="text" name="csv-file-name" placeholder="<?php esc_attr_e( 'An Error Occured', 'export-all-urls' ); ?>"
                                                 value="<?php echo $file_name; ?>"
                                                 size="30%"/></label><br/>
                                                 <code><?php echo $file_path['path']; ?></code>
@@ -246,13 +237,12 @@ function eau_generate_html()
 
                             <tr>
 
-                                <th>Export Type:</th>
+                                <th><?php esc_html_e( 'Export Type:', 'export-all-urls' ); ?></th>
 
                                 <td>
 
-                                    <label><input type="radio" name="export-type" value="text" required="required"/> CSV File</label><br/>
-                                    <label><input type="radio" name="export-type" value="here" required="required" checked />
-                                        Output here</label><br/>
+                                    <label><input type="radio" name="export-type" value="text" required="required"/><?php esc_html_e( 'CSV File', 'export-all-urls' ); ?></label><br/>
+                                    <label><input type="radio" name="export-type" value="here" required="required" checked /><?php esc_html_e( 'Output here', 'export-all-urls' ); ?></label><br/>
 
                                 </td>
 
@@ -264,7 +254,7 @@ function eau_generate_html()
 
                                 <td>
                                     <input type="submit" name="export" class="button button-primary"
-                                           value="Export Now"/>
+                                           value="<?php esc_attr_e( 'Export Now', 'export-all-urls' ); ?>"/>
                                 </td>
 
                             </tr>
@@ -343,7 +333,7 @@ function eau_generate_html()
                     rows[i].style.display = 'table-row';
                 }
 
-                document.getElementById('advanceOptionsLabel').innerHTML = "Hide Advanced Options";
+                document.getElementById('advanceOptionsLabel').innerHTML = "<?php esc_html_e( 'Hide Advanced Options', 'export-all-urls' ); ?>";
                 document.getElementById('advanceOptionsLabel').setAttribute("onclick", "javascript: hideAdvanceOptions(); return false;");
 
             }
@@ -356,7 +346,7 @@ function eau_generate_html()
                     rows[i].style.display = 'none';
                 }
 
-                document.getElementById('advanceOptionsLabel').innerHTML = "Show Advanced Options";
+                document.getElementById('advanceOptionsLabel').innerHTML = "<?php esc_html_e( 'Show Advanced Options', 'export-all-urls' ); ?>";
                 document.getElementById('advanceOptionsLabel').setAttribute("onclick", "javascript: showAdvanceOptions(); return false;");
 
             }
@@ -368,7 +358,7 @@ function eau_generate_html()
                     rows[i].style.display = 'table-row';
                 }
 
-                document.getElementById('moreFilterOptionsLabel').innerHTML = "Hide Filter Options";
+                document.getElementById('moreFilterOptionsLabel').innerHTML = "<?php esc_html_e( 'Hide Filter Options', 'export-all-urls' ); ?>";
                 document.getElementById('moreFilterOptionsLabel').setAttribute("onclick", "javascript: lessFilterOptions(); return false;");
 
             }
@@ -380,7 +370,7 @@ function eau_generate_html()
                     rows[i].style.display = 'none';
                 }
 
-                document.getElementById('moreFilterOptionsLabel').innerHTML = "Show Filter Options";
+                document.getElementById('moreFilterOptionsLabel').innerHTML = "<?php esc_html_e( 'Show Filter Options', 'export-all-urls' ); ?>";
                 document.getElementById('moreFilterOptionsLabel').setAttribute("onclick", "javascript: moreFilterOptions(); return false;");
 
             }
@@ -407,7 +397,7 @@ function eau_generate_html()
             $nonce = $_REQUEST['_wpnonce'];
             if (!wp_verify_nonce($nonce, 'export_urls'))
             {
-                echo "<div class='notice notice-error' style='width: 93%'>Security token validation failed!</div>";
+                echo "<div class='notice notice-error' style='width: 93%'>" . esc_html__( 'Security token validation failed!', 'export-all-urls') . "</div>";
                 exit;
             }
 
@@ -431,7 +421,7 @@ function eau_generate_html()
 
                     if (!isset($offset) || !isset($post_per_page))
                     {
-                        echo "Sorry, you didn't specify starting and ending post range. Please <strong>Set Post Range</strong> OR <strong>Select All</strong> and try again! :)";
+                        echo __( "Sorry, you didn't specify starting and ending post range. Please <strong>Set Post Range</strong> OR <strong>Select All</strong> and try again! :)", 'export-all-urls' );
                         exit;
                     }
 
@@ -448,7 +438,7 @@ function eau_generate_html()
                 {
                     if (empty($csv_name))
                     {
-                        echo "Invalid/Missing CSV File Name!";
+                        echo __( "Invalid/Missing CSV File Name!", 'export-all-urls' );
                         exit;
                     }
                 }
@@ -461,7 +451,7 @@ function eau_generate_html()
 
                     if ($posts_from > $posts_upto)
                     {
-                        echo "Sorry, invalid post date range. :)";
+                        echo __( "Sorry, invalid post date range. :)", 'export-all-urls' );
                         exit;
                     }
 
@@ -479,13 +469,13 @@ function eau_generate_html()
             }
             else
             {
-                echo "<div class='notice notice-error' style='width: 93%'>Sorry, you missed something, Please recheck above options, especially <strong>Export Fields</strong> and try again! :)</div>";
+                echo "<div class='notice notice-error' style='width: 93%'>" . __( 'Sorry, you missed something, Please recheck above options, especially <strong>Export Fields</strong> and try again! :)', 'export-all-urls' ) . "</div>";
                 exit;
             }
         }
         else
         {
-            echo "<div class='notice notice-error' style='width: 93%'>Verification token is missing!</div>";
+            echo "<div class='notice notice-error' style='width: 93%'>" . __( 'Verification token is missing!', 'export-all-urls' ) . "</div>";
             exit;
         }
 
@@ -494,7 +484,7 @@ function eau_generate_html()
     {
         if (!isset($_REQUEST['_wpnonce']) || !wp_verify_nonce($_GET['_wpnonce']))
         {
-            echo "You are not authorized to perform this action!";
+            echo __( 'You are not authorized to perform this action!', 'export-all-urls' );
             exit();
         }
         else
@@ -504,9 +494,9 @@ function eau_generate_html()
             $upload_dir = wp_upload_dir();
 
             if (($path_info['dirname'] == $upload_dir['path']) && ($path_info['extension'] == 'CSV')) {
-                echo !empty($file) ? file_exists($file) ? !unlink($file) ? "<div class='notice notice-error' style='width: 97%'></div>Unable to delete file, please delete it manually!" : "<div class='updated' style='width: 97%'>You did great, the file was <strong>Deleted Successfully</strong>!</div>" : null : "<div class='notice notice-error'>Missing file path.</div>";
+                echo !empty($file) ? file_exists($file) ? !unlink($file) ? "<div class='notice notice-error' style='width: 97%'></div>" . __( 'Unable to delete file, please delete it manually!', 'export-all-urls' ) : "<div class='updated' style='width: 97%'>" . __( 'You did great, the file was <strong>Deleted Successfully</strong>!', 'export-all-urls' ). "</div>" : null : "<div class='notice notice-error'>" . __( 'Missing file path.', 'export-all-urls' ) . "</div>";
             } else {
-                die("<div class='error' style='width: 95.3%; margin-left: 2px;'>Sorry, the file verification failed. Arbitrary file removal is not allowed.</div>");
+                die("<div class='error' style='width: 95.3%; margin-left: 2px;'>" . __( 'Sorry, the file verification failed. Arbitrary file removal is not allowed.', 'export-all-urls' ) . "</div>");
             }
         }
 

@@ -7,6 +7,7 @@ Description: This plugin allows you to extract Title, URL and Categories of buil
 Version: 4.4
 Author: Atlas Gondal
 Author URI: https://AtlasGondal.com/
+Text Domain: export-all-urls
 License: GPL v2 or higher
 License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -14,7 +15,7 @@ License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 function eau_extract_all_urls_nav(){
 
-    add_management_page( 'Export All URLs', 'Export All URLs', 'manage_options', 'extract-all-urls-settings', 'eau_include_settings_page' );
+    add_management_page( _x( 'Export All URLs', 'Page Title', 'export-all-urls' ), _x( 'Export All URLs', 'Menu Title', 'export-all-urls' ), 'manage_options', 'extract-all-urls-settings', 'eau_include_settings_page' );
 
 }
 
@@ -32,7 +33,7 @@ function eau_export_all_urls_on_activate() {
         $plugin_data = get_plugin_data( __FILE__ );
         $plugin_version = $plugin_data['Version'];
         $plugin_name = $plugin_data['Name'];
-        wp_die( '<h1>' . __('Could not activate plugin: PHP version error') . '</h1><h2>PLUGIN: <i>' . $plugin_name . ' ' . $plugin_version . '</i></h2><p><strong>' . __('You are using PHP version') . ' ' . PHP_VERSION . '</strong>. ' . __( 'This plugin has been tested with PHP versions 5.4 and greater.') . '</p><p>' . __('WordPress itself recommends using PHP version 7.3 or greater') . ': <a href="https://wordpress.org/about/requirements/" target="_blank">' . __('Official WordPress requirements') . '</a>' . '. ' . __('Please upgrade your PHP version or contact your Server administrator.') . '</p>', __('Could not activate plugin: PHP version error'), array( 'back_link' => true ) );
+        wp_die( '<h1>' . __('Could not activate plugin: PHP version error', 'export-all-urls' ) . '</h1><h2>' . __('PLUGIN: ', 'export-all-urls' ) . '<i>' . $plugin_name . ' ' . $plugin_version . '</i></h2><p><strong>' . __('You are using PHP version', 'export-all-urls' ) . ' ' . PHP_VERSION . '</strong>. ' . __( 'This plugin has been tested with PHP versions 5.4 and greater.', 'export-all-urls' ) . '</p><p>' . __('WordPress itself recommends using PHP version 7.3 or greater', 'export-all-urls' ) . ': <a href="https://wordpress.org/about/requirements/" target="_blank">' . __('Official WordPress requirements', 'export-all-urls' ) . '</a>' . '. ' . __('Please upgrade your PHP version or contact your Server administrator.', 'export-all-urls' ) . '</p>', __('Could not activate plugin: PHP version error', 'export-all-urls' ), array( 'back_link' => true ) );
 
     }
     set_transient( 'eau_export_all_urls_activation_redirect', true, 30 );
@@ -61,7 +62,7 @@ function eau_admin_footer_text( $footer_text ) {
     $is_export_all_urls_screen = ( $current_screen && false !== strpos( $current_screen->id, 'extract-all-urls-settings' ) );
 
     if ( $is_export_all_urls_screen ) {
-        $footer_text = 'Enjoyed <strong>Export All URLs</strong>? Please leave us a <a href="https://wordpress.org/support/plugin/export-all-urls/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> rating. We really appreciate your support! ';
+        $footer_text = __( 'Enjoyed <strong>Export All URLs</strong>? Please leave us a <a href="https://wordpress.org/support/plugin/export-all-urls/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a> rating. We really appreciate your support!', 'export-all-urls' );
     }
 
     return $footer_text;

@@ -294,14 +294,14 @@ function eau_export_data($urls, $export_type, $csv_name)
 
         case "here":
 
-            echo "<h1 align='center' style='padding: 10px 0;'><strong>Below is a list of Exported Data:</strong></h1>";
-            echo "<h2 align='center' style='font-weight: normal;'>Total number of links: <strong>".esc_html($count)."</strong>.</h2>";
+            echo "<h1 align='center' style='padding: 10px 0;'><strong>" . esc_html__( 'Below is a list of Exported Data:', 'export-all-urls' ) . "</strong></h1>";
+            echo "<h2 align='center' style='font-weight: normal;'>" . esc_html__( 'Total number of links: ', 'export-all-urls' ) . "<strong>".esc_html($count)."</strong></h2>";
             echo "<table class='form-table' id='outputData'>";
             echo "<tr><th>#</th>";
-            echo isset($urls['post_id']) ? "<th id='postID'>Post ID</th>" : null;
-            echo isset($urls['title']) ? "<th id='postTitle'>Title</th>" : null;
-            echo isset($urls['url']) ? "<th id='postURL'>URLs</th>" : null;
-            echo isset($urls['category']) ? "<th id='postCategories'>Categories</th>" : null;
+            echo isset($urls['post_id']) ? "<th id='postID'>" . esc_html__( 'Post ID', 'export-all-urls' ) . "</th>" : null;
+            echo isset($urls['title']) ? "<th id='postTitle'>" . esc_html__( 'Title', 'export-all-urls' ) . "</th>" : null;
+            echo isset($urls['url']) ? "<th id='postURL'>" . esc_html__( 'URLs', 'export-all-urls' ) . "</th>" : null;
+            echo isset($urls['category']) ? "<th id='postCategories'>" . esc_html__( 'Categories', 'export-all-urls' ) . "</th>" : null;
 
             echo "</tr>";
 
