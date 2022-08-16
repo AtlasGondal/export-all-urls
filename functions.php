@@ -140,7 +140,7 @@ function eau_generate_output($selected_post_type, $post_status, $post_author, $r
     ));
 
     if (!$posts_query->have_posts()) {
-        echo "no result found in that range, please <strong>reselect and try again</strong>!";
+        echo __( 'no result found in that range, please <strong>reselect and try again</strong>!', 'export-all-urls' );
         return;
     }
 
@@ -261,15 +261,15 @@ function eau_export_data($urls, $export_type, $csv_name)
             $headers = array();
 
             $file = $file_path['path'] . "/" . $csv_name . '.CSV';
-            $myfile = @fopen($file, "w") or die("<div class='error' style='width: 95.3%; margin-left: 2px;'>Unable to create a file on your server! (either invalid name supplied or permission issue)</div>");
+            $myfile = @fopen($file, "w") or die("<div class='error' style='width: 95.3%; margin-left: 2px;'>" . esc_html__( 'Unable to create a file on your server! (either invalid name supplied or permission issue)', 'export-all-urls' ) . "</div>");
             fprintf($myfile, "\xEF\xBB\xBF");
 
             $csv_url = esc_url($file_path['url'] . "/" . $csv_name . ".CSV");
 
-            $headers[] = 'Post ID';
-            $headers[] = 'Title';
-            $headers[] = 'URLs';
-            $headers[] = 'Categories';
+            $headers[] = __( 'Post ID', 'export-all-urls' );
+            $headers[] = __( 'Title', 'export-all-urls' );
+            $headers[] = __( 'URLs', 'export-all-urls' );
+            $headers[] = __( 'Categories', 'export-all-urls' );
 
             fputcsv($myfile, $headers);
 
@@ -286,22 +286,22 @@ function eau_export_data($urls, $export_type, $csv_name)
 
             fclose($myfile);
 
-            echo "<div class='updated' style='width: 97%'>Data exported successfully! <a href='" . $csv_url . "' target='_blank'><strong>Click here</strong></a> to Download.</div>";
-            echo "<div class='notice notice-warning' style='width: 97%'>Once you have downloaded the file, it is recommended to delete file from the server, for security reasons. <a href='".wp_nonce_url(admin_url('tools.php?page=extract-all-urls-settings&del=y&f=').base64_encode($file))."' ><strong>Click Here</strong></a> to delete the file. And don't worry, you can always regenerate anytime. :)</div>";
-            echo "<div class='notice notice-info' style='width: 97%'><strong>Total</strong> number of links: <strong>".esc_html($count)."</strong>.</div>";
+            echo "<div class='updated' style='width: 97%'>" . esc_html__( 'Data exported successfully! ', 'export-all-urls' ) . "<a href='" . $csv_url . "' target='_blank'><strong>" . esc_html__( 'Click here', 'export-all-urls' ) . "</strong></a>" . esc_html__( ' to Download.', 'export-all-urls' ) . "</div>";
+            echo "<div class='notice notice-warning' style='width: 97%'>" . esc_html__( 'Once you have downloaded the file, it is recommended to delete file from the server, for security reasons. ', 'export-all-urls' ) . "<a href='".wp_nonce_url(admin_url('tools.php?page=extract-all-urls-settings&del=y&f=').base64_encode($file))."' ><strong>" . esc_html__( 'Click Here', 'export-all-urls' ) . "</strong></a>" . esc_html__( ' to delete the file. And don\'t worry, you can always regenerate anytime. :)', 'export-all-urls' ) . "</div>";
+            echo "<div class='notice notice-info' style='width: 97%'><strong>" . esc_html__( 'Total', 'export-all-urls' ) . "</strong>" . esc_html__( ' number of links: ', 'export-all-urls' ) . "<strong>".esc_html($count)."</strong></div>";
 
             break;
 
         case "here":
 
-            echo "<h1 align='center' style='padding: 10px 0;'><strong>Below is a list of Exported Data:</strong></h1>";
-            echo "<h2 align='center' style='font-weight: normal;'>Total number of links: <strong>".esc_html($count)."</strong>.</h2>";
+            echo "<h1 align='center' style='padding: 10px 0;'><strong>" . esc_html__( 'Below is a list of Exported Data:', 'export-all-urls' ) . "</strong></h1>";
+            echo "<h2 align='center' style='font-weight: normal;'>" . esc_html__( 'Total number of links: ', 'export-all-urls' ) . "<strong>".esc_html($count)."</strong></h2>";
             echo "<table class='form-table' id='outputData'>";
             echo "<tr><th>#</th>";
-            echo isset($urls['post_id']) ? "<th id='postID'>Post ID</th>" : null;
-            echo isset($urls['title']) ? "<th id='postTitle'>Title</th>" : null;
-            echo isset($urls['url']) ? "<th id='postURL'>URLs</th>" : null;
-            echo isset($urls['category']) ? "<th id='postCategories'>Categories</th>" : null;
+            echo isset($urls['post_id']) ? "<th id='postID'>" . esc_html__( 'Post ID', 'export-all-urls' ) . "</th>" : null;
+            echo isset($urls['title']) ? "<th id='postTitle'>" . esc_html__( 'Title', 'export-all-urls' ) . "</th>" : null;
+            echo isset($urls['url']) ? "<th id='postURL'>" . esc_html__( 'URLs', 'export-all-urls' ) . "</th>" : null;
+            echo isset($urls['category']) ? "<th id='postCategories'>" . esc_html__( 'Categories', 'export-all-urls' ) . "</th>" : null;
 
             echo "</tr>";
 
