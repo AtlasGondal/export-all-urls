@@ -7,6 +7,7 @@ Description: This plugin enables you to extract information such as Title, URL, 
 Version: 4.5
 Author: Atlas Gondal
 Author URI: https://AtlasGondal.com/
+Text Domain: export-all-urls
 License: GPL v2 or higher
 License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
