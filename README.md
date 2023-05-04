@@ -7,10 +7,14 @@ tiny useful URL exporter plugin for wordpress websites
 
 This plugin will add a page called “Export All URLs” under Tools. You can navigate there and can extract data from your site. You can **export** Posts:
 
-- IDs
-- Titles
-- URLs
-- And Categories
+- ID
+- Title
+- URL
+- Categories
+- Tags
+- Author
+- Published Date
+- Modified Date
 
 The data can be categorized before extraction, by their post types.
 
