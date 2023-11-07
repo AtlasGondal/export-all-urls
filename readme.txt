@@ -3,8 +3,8 @@ Contributors: Atlas_Gondal
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YWT3BFURG6SGS&source=url
 Tags: extract urls, export urls, links, get links, get urls, custom post type urls, see links, extract title, export title, export post title, export title and url, export category, utilities, export, csv
 Requires at least: 3.1
-Tested up to: 6.2
-Stable tag: 4.5
+Tested up to: 6.4
+Stable tag: 4.7
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -134,6 +134,15 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 
 == Changelog ==
 
+= 4.7 = 
+* Added - support for the translation
+* Compatibility - tested with WordPress 6.4
+* Improvement - better organization and several code refinements 
+
+= 4.6 = 
+* Fixed - reflected cross-site scripting vulnerability
+* Compatibility - tested with WordPress 6.2.2
+
 = 4.5 = 
 * New - additional export fields added (tags, author, published, and modified date)
 * New - option to retain selected options (no reset to default upon exporting)
@@ -220,9 +229,6 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 
 == Upgrade Notice ==
 
-= 4.4 = 
-* New - additional export fields added (tags, author, published, and modified date)
-* New - option to retain selected options (no reset to default upon exporting)
-* Improvement - backend code refinement
-* Compatibility - minor adjustments for PHP 8.1 compatibility
-* Compatibility - tested with WordPress 6.2
+= 4.6 = 
+* Fixed - reflected cross-site scripting vulnerability
+* Compatibility - tested with WordPress 6.2.2

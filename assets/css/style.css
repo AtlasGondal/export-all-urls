@@ -1,0 +1,118 @@
+.eauWrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden
+}
+
+#eauMainContainer {
+    width: 75%;
+    margin-bottom: 0
+}
+
+#eauSideContainer {
+    width: 24%
+}
+
+#eauSideContainer .postbox:first-child {
+    margin-left: 20px;
+    padding-top: 10%;
+    display: grid;
+}
+
+.eaucolumns {
+    float: left;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px
+}
+
+#eauSideContainer .postbox {
+    margin-bottom: 0;
+    float: none
+}
+
+#eauSideContainer .inside {
+    margin-bottom: 0
+}
+
+#eauSideContainer hr {
+    width: 70%;
+    margin: 30px auto
+}
+
+#eauSideContainer h3 {
+    cursor: default;
+    text-align: center;
+    font-size: 16px
+}
+
+#eauSideContainer li {
+    list-style: disclosure-closed;
+    margin-left: 25px
+}
+
+#eauSideContainer li a img {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#eauDevelopedBy {
+    text-align: center
+}
+
+#outputData {
+    border-collapse: collapse;
+    width: 98%
+}
+
+#outputData tr:nth-child(even) {
+    background-color: #fff
+}
+
+#outputData tr:hover {
+    background-color: #ddd
+}
+
+#outputData th {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+#outputData td,
+#outputData th {
+    text-align: left;
+    padding: 8px
+}
+
+#outputData th:first-child {
+    width: 4%
+}
+
+#outputData #postID {
+    width: 6%
+}
+
+#outputData #postTitle {
+    width: 25%
+}
+
+#outputData #postURL {
+    width: 45%
+}
+
+#outputData #postCategories {
+    width: 20%
+}
+
+#eauMainContainer code {
+    font-size: 11px;
+    background-color: #eee;
+    padding-left: 5px;
+    padding-right: 5px;
+}
