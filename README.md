@@ -11,10 +11,13 @@ This plugin will add a page called “Export All URLs” under Tools. You can na
 - Title
 - URL
 - Categories
+- Category URLs
 - Tags
+- Tag URLs
 - Author
 - Published Date
 - Modified Date
+- Status
 
 The data can be categorized before extraction, by their post types.
 
