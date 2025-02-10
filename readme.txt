@@ -3,8 +3,8 @@ Contributors: Atlas_Gondal
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YWT3BFURG6SGS&source=url
 Tags: extract urls, export urls, links, get links, get urls, custom post type urls, see links, extract title, export title, export post title, export title and url, export category, utilities, export, csv
 Requires at least: 3.1
-Tested up to: 6.6
-Stable tag: 4.7.1
+Tested up to: 6.7.1
+Stable tag: 5.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,10 +19,13 @@ This plugin will add a page called "Export All URLs" under Tools. You can naviga
 * Title
 * URL
 * Categories
+* Category URLs
 * Tags
+* Tag URLs
 * Author
 * Published Date
 * Modified Date
+* Status
 
 The data can be filtered by post type, post status, date range, and author before extraction, and the plugin also provides the option to export using a specific post range.
 
@@ -134,6 +137,12 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 
 == Changelog ==
 
+= 5.0 =
+* New - additional export fields added (status, category urls, tag urls)
+* New - allows multiple post status selection
+* Improvement - few backend refinements to improve performance
+* Compatibility - tested with Wordpress 6.7.1
+
 = 4.7.1 =
 * Compatibility - test with Wordpress 6.7-alpha-58656
 
@@ -232,5 +241,8 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 
 == Upgrade Notice ==
 
-= 4.7.1 =
-* Compatibility - tested with WordPress 6.7-alpha-58656
+= 5.0 =
+* New - additional export fields added (status, category urls, tag urls)
+* New - allows multiple post status selection
+* Improvement - few backend refinements to improve performance
+* Compatibility - tested with Wordpress 6.7.1

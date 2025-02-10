@@ -71,7 +71,7 @@ function eau_generate_html()
     $form_submitted = isset($_POST['form_submitted']) ? true : false;
     $selected_post_type = isset($_POST['post-type']) ? $_POST['post-type'] : 'any';
     $selected_export_fields = isset($_POST['export_fields']) ? $_POST['export_fields'] : ($form_submitted ? array() : array('url', 'title'));
-    $selected_post_status = isset($_POST['post-status']) ? $_POST['post-status'] : 'publish';
+    $selected_post_status = isset($_POST['post-status']) ? $_POST['post-status'] : ($form_submitted ? array() : array('publish'));
     $selected_user = isset($_POST['post-author']) ? $_POST['post-author'] : 'all';
     $selected_export_type = isset($_POST['export-type']) ? $_POST['export-type'] : 'here';
 
@@ -128,7 +128,7 @@ function eau_generate_html()
                                 <td>
 
                                     <?php foreach ($post_status as $value => $label) : ?>
-                                        <label><input type="radio" name="post-status" value="<?php echo $value; ?>" <?php echo $value == $selected_post_status ? 'checked' : ''; ?>> <?php echo $label; ?></label><br />
+                                        <label><input type="checkbox" name="post-status[]" value="<?php echo $value; ?>" <?php echo in_array($value, $selected_post_status) ? 'checked' : ''; ?>> <?php echo $label; ?></label><br />
                                     <?php endforeach; ?>
 
                                 </td>
@@ -311,7 +311,7 @@ function eau_generate_html()
                 $post_type = sanitize_text_field($_POST['post-type']);
                 $export_type = sanitize_text_field($_POST['export-type']);
                 $export_fields = map_deep($_POST['export_fields'], 'sanitize_text_field');
-                $post_status = sanitize_text_field($_POST['post-status']);
+                $post_status = map_deep($_POST['post-status'], 'sanitize_text_field');
                 $post_author = sanitize_text_field($_POST['post-author']);
                 $exclude_domain = isset($_POST['exclude-domain']) ? sanitize_text_field($_POST['exclude-domain']) : null;
                 $number_of_posts = sanitize_text_field($_POST['number-of-posts']);
