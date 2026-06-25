@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" width="160" height="48" role="img" aria-label="Donate with PayPal">
+  <rect x="0.75" y="0.75" width="158.5" height="46.5" rx="7" ry="7" fill="#FFC439" stroke="#E0A800" stroke-width="1.5"/>
+  <text x="16" y="30" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#2C2E2F">Donate</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" font-style="italic">
+    <text x="86" y="30" fill="#253B80">Pay</text>
+    <text x="114" y="30" fill="#179BD7">Pal</text>
+  </g>
+</svg>

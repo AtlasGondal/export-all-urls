@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Export All URLs 6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/export-all-urls/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ur\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Below is a list of Exported Data:"
+msgstr "ذیل میں ایکسپورٹ کیے گئے ڈیٹا کی فہرست ہے:"
+
+msgid "Total number of links"
+msgstr "لنکس کی کل تعداد"
+
+msgid "Results per page:"
+msgstr "فی صفحہ نتائج:"
+
+msgid "All"
+msgstr "تمام"
+
+msgid "Previous"
+msgstr "پچھلا"
+
+msgid "Next"
+msgstr "اگلا"
+
+msgid "Core"
+msgstr "بنیادی"
+
+msgid "Taxonomy"
+msgstr "درجہ بندی"
+
+msgid "Author & Dates"
+msgstr "مصنف اور تاریخیں"
+
+msgid "Content"
+msgstr "مواد"
+
+msgid "Multilingual"
+msgstr "کثیر لسانی"
+
+msgid "The \"Language\" column is each post's own language. The \"Translation URLs\" column lists the URL of every available translation of that post."
+msgstr "\"زبان\" کالم ہر پوسٹ کی اپنی زبان ہے۔ \"ترجمہ URLs\" کالم اس پوسٹ کے ہر دستیاب ترجمے کا URL درج کرتا ہے۔"
+
+msgid "SEO basics"
+msgstr "SEO بنیادی باتیں"
+
+msgid "Full audit"
+msgstr "مکمل آڈٹ"
+
+msgid "None"
+msgstr "کوئی نہیں"
+
+msgid "Post ID"
+msgstr "پوسٹ ID"
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Status"
+msgstr "حیثیت"
+
+msgid "Categories"
+msgstr "زمرہ جات"
+
+msgid "Category URLs"
+msgstr "زمرہ URLs"
+
+msgid "Tags"
+msgstr "ٹیگز"
+
+msgid "Tag URLs"
+msgstr "ٹیگ URLs"
+
+msgid "Author"
+msgstr "مصنف"
+
+msgid "Published Date"
+msgstr "تاریخ اشاعت"
+
+msgid "Modified Date"
+msgstr "تاریخ ترمیم"
+
+msgid "Word Count"
+msgstr "الفاظ کی تعداد"
+
+msgid "Excerpt"
+msgstr "اقتباس"
+
+msgid "Featured Image URL"
+msgstr "نمایاں تصویر کا URL"
+
+msgid "Comment Count"
+msgstr "تبصروں کی تعداد"
+
+msgid "Slug"
+msgstr "سلگ"
+
+msgid "Post Type"
+msgstr "پوسٹ کی قسم"
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "Translation URLs"
+msgstr "ترجمہ URLs"
+
+msgid "No result found in that range, please reselect and try again!"
+msgstr "اس حد میں کوئی نتیجہ نہیں ملا، براہ کرم دوبارہ منتخب کریں اور دوبارہ کوشش کریں!"
+
+msgid "Export All URLs"
+msgstr ""
+
+msgid "Sorry, you missed something. Please recheck the options, especially <strong>Export Fields</strong>, and try again. :)"
+msgstr "کچھ رہ گیا ہے۔ براہ کرم اختیارات خصوصاً <strong>ایکسپورٹ فیلڈز</strong> دوبارہ دیکھیں اور دوبارہ کوشش کریں۔ :)"
+
+msgid "Invalid/Missing CSV File Name!"
+msgstr "غلط/گمشدہ CSV فائل کا نام!"
+
+msgid "Sorry, invalid post date range. :)"
+msgstr "معذرت، پوسٹ کی تاریخوں کی حد غلط ہے۔ :)"
+
+msgid "Change"
+msgstr "تبدیلی"
+
+msgid "Details"
+msgstr "تفصیلات"
+
+msgid "Notable"
+msgstr "قابلِ توجہ"
+
+msgid "Added"
+msgstr "شامل کیا گیا"
+
+msgid "Removed"
+msgstr "ہٹایا گیا"
+
+msgid "Modified"
+msgstr "ترمیم شدہ"
+
+msgid "Yes"
+msgstr "ہاں"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "آپ کے پاس اس صفحے تک رسائی کی کافی اجازت نہیں ہے۔"
+
+msgid "Security token validation failed!"
+msgstr "سیکیورٹی ٹوکن کی توثیق ناکام ہو گئی!"
+
+msgid "Invalid export type."
+msgstr "غلط ایکسپورٹ قسم۔"
+
+msgid "Could not activate plugin: PHP version error"
+msgstr "پلگ ان فعال نہیں ہو سکا: PHP ورژن کی خرابی"
+
+msgid "PLUGIN:"
+msgstr "پلگ ان:"
+
+msgid "You are using PHP version"
+msgstr "آپ PHP ورژن استعمال کر رہے ہیں"
+
+msgid "This plugin requires PHP version %s or greater."
+msgstr "اس پلگ ان کو PHP ورژن %s یا اس سے زیادہ درکار ہے۔"
+
+msgid "WordPress itself recommends using PHP version 7.4 or greater"
+msgstr "WordPress خود PHP ورژن 7.4 یا اس سے زیادہ استعمال کرنے کی سفارش کرتا ہے"
+
+msgid "Official WordPress requirements"
+msgstr "WordPress کے سرکاری تقاضے"
+
+msgid "Please upgrade your PHP version or contact your Server administrator."
+msgstr "براہ کرم اپنا PHP ورژن اپ گریڈ کریں یا اپنے سرور ایڈمنسٹریٹر سے رابطہ کریں۔"
+
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr "کیا آپ کو %1$s پسند آیا؟ براہ کرم ہمیں %2$s درجہ بندی دیں۔ ہم آپ کے تعاون کے بے حد مشکور ہیں!"
+
+msgid "All Types (pages, posts, and custom post types)"
+msgstr "تمام اقسام (صفحات، پوسٹس، اور حسب ضرورت پوسٹ اقسام)"
+
+msgid "Pages"
+msgstr "صفحات"
+
+msgid "Posts"
+msgstr "پوسٹس"
+
+msgid "Published"
+msgstr "شائع شدہ"
+
+msgid "Pending"
+msgstr "زیر التواء"
+
+msgid "Draft & Auto Draft"
+msgstr "مسودہ اور خودکار مسودہ"
+
+msgid "Future Scheduled"
+msgstr "شیڈول شدہ"
+
+msgid "Private"
+msgstr "نجی"
+
+msgid "Trashed"
+msgstr "ردی میں"
+
+msgid "All (Published, Pending, Draft, Future Scheduled, Private & Trash)"
+msgstr "تمام (شائع شدہ، زیر التواء، مسودہ، شیڈول شدہ، نجی اور ردی)"
+
+msgid "CSV File"
+msgstr "CSV فائل"
+
+msgid "JSON File"
+msgstr "JSON فائل"
+
+msgid "Hide Filter Options"
+msgstr "فلٹر اختیارات چھپائیں"
+
+msgid "Show Filter Options"
+msgstr "فلٹر اختیارات دکھائیں"
+
+msgid "Hide Advanced Options"
+msgstr "اعلیٰ اختیارات چھپائیں"
+
+msgid "Show Advanced Options"
+msgstr "اعلیٰ اختیارات دکھائیں"
+
+msgid "Export Data from your Site"
+msgstr "اپنی سائٹ سے ڈیٹا ایکسپورٹ کریں"
+
+msgid "Select a Post Type to Extract Data:"
+msgstr "ڈیٹا نکالنے کے لیے پوسٹ کی قسم منتخب کریں:"
+
+msgid "Export Fields:"
+msgstr "ایکسپورٹ فیلڈز:"
+
+msgid "Presets:"
+msgstr "پری سیٹس:"
+
+msgid "Select all"
+msgstr "سب منتخب کریں"
+
+msgid "Post Status:"
+msgstr "پوسٹ کی حیثیت:"
+
+msgid "Languages:"
+msgstr "زبانیں:"
+
+msgid "All languages"
+msgstr "تمام زبانیں"
+
+msgid "Default language only"
+msgstr "صرف ڈیفالٹ زبان"
+
+msgid "Controls which languages are exported, regardless of the language selected in the admin bar."
+msgstr "یہ کنٹرول کرتا ہے کہ کون سی زبانیں ایکسپورٹ ہوں، چاہے ایڈمن بار میں کوئی بھی زبان منتخب ہو۔"
+
+msgid "Date Range:"
+msgstr "تاریخوں کی حد:"
+
+msgid "From:"
+msgstr "سے:"
+
+msgid "To:"
+msgstr "تک:"
+
+msgid "By Author:"
+msgstr "بلحاظ مصنف:"
+
+msgid "Exclude Domain URL:"
+msgstr "ڈومین URL خارج کریں:"
+
+msgid "Enable this option to remove the domain from URLs, e.g., 'example.com/sample-post/' becomes '/sample-post/'"
+msgstr "یہ اختیار فعال کریں تاکہ URLs سے ڈومین ہٹ جائے، مثلاً 'example.com/sample-post/' بن جائے گا '/sample-post/'"
+
+msgid "Number of Posts:"
+msgstr "پوسٹس کی تعداد:"
+
+msgid "Specify Post Range to Extract, It is very useful in case of Memory Out Error!"
+msgstr "نکالنے کے لیے پوسٹ کی حد بتائیں، یہ میموری ختم ہونے کی خرابی میں بہت مفید ہے!"
+
+msgid "Specify Range"
+msgstr "حد متعین کریں"
+
+msgid "Download File Name:"
+msgstr "ڈاؤن لوڈ فائل کا نام:"
+
+msgid "Download Format:"
+msgstr "ڈاؤن لوڈ فارمیٹ:"
+
+msgid "Download"
+msgstr "ڈاؤن لوڈ"
+
+msgid "Display Here"
+msgstr "یہاں دکھائیں"
+
+msgid "Want to Support?"
+msgstr "تعاون کرنا چاہتے ہیں؟"
+
+msgid "If you enjoyed the plugin, and want to support:"
+msgstr "اگر آپ کو پلگ ان پسند آیا اور آپ تعاون کرنا چاہتے ہیں:"
+
+msgid "Hire me"
+msgstr "مجھے کام پر رکھیں"
+
+msgid "on a project"
+msgstr "کسی پروجیکٹ پر"
+
+msgid "Buy me a Coffee (donate via PayPal)"
+msgstr "مجھے کافی پلائیں (PayPal کے ذریعے عطیہ کریں)"
+
+msgid "Wanna say Thanks?"
+msgstr "شکریہ کہنا چاہتے ہیں؟"
+
+msgid "Leave"
+msgstr "ہمیں"
+
+msgid "rating"
+msgstr "درجہ بندی دیں"
+
+msgid "Follow me on X:"
+msgstr "X پر فالو کریں:"
+
+msgid "Got a Problem?"
+msgstr "کوئی مسئلہ ہے؟"
+
+msgid "Want to report a bug or suggest a feature? You can:"
+msgstr "بگ رپورٹ کرنا یا کوئی فیچر تجویز کرنا چاہتے ہیں؟ آپ یہ کر سکتے ہیں:"
+
+msgid "Create"
+msgstr "بنائیں"
+
+msgid "Support Ticket"
+msgstr "سپورٹ ٹکٹ"
+
+msgid "Write me an"
+msgstr "مجھے لکھیں"
+
+msgid "Email"
+msgstr "ای میل"
+
+msgid "Developed by:"
+msgstr "تیار کردہ از:"
+
+msgid "New"
+msgstr "نیا"
+
+msgid "Custom fields"
+msgstr "حسب ضرورت فیلڈز"
+
+msgid "Featured image"
+msgstr "نمایاں تصویر"
+
+msgid "Changed"
+msgstr "تبدیل شدہ"
+
+msgid "Snapshot created."
+msgstr "سنیپ شاٹ بنا دیا گیا۔"
+
+msgid "Snapshot deleted."
+msgstr "سنیپ شاٹ حذف کر دیا گیا۔"
+
+msgid "Could not create the snapshot."
+msgstr "سنیپ شاٹ نہیں بنایا جا سکا۔"
+
+msgid "Take a new snapshot"
+msgstr "نیا سنیپ شاٹ لیں"
+
+msgid "Optional label, e.g. before migration"
+msgstr "اختیاری لیبل، مثلاً منتقلی سے پہلے"
+
+msgid "Take snapshot"
+msgstr "سنیپ شاٹ لیں"
+
+msgid "Records a fingerprint of every post and page (all types, all languages) so you can detect changes later."
+msgstr "ہر پوسٹ اور صفحے (تمام اقسام، تمام زبانیں) کا فنگر پرنٹ ریکارڈ کرتا ہے تاکہ آپ بعد میں تبدیلیاں معلوم کر سکیں۔"
+
+msgid "Saved snapshots"
+msgstr "محفوظ شدہ سنیپ شاٹس"
+
+msgid "No snapshots yet. Take your first snapshot above."
+msgstr "ابھی کوئی سنیپ شاٹ نہیں۔ اوپر اپنا پہلا سنیپ شاٹ لیں۔"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Label"
+msgstr "لیبل"
+
+msgid "Actions"
+msgstr "اعمال"
+
+msgid "Compare"
+msgstr "موازنہ کریں"
+
+msgid "Delete this snapshot?"
+msgstr "یہ سنیپ شاٹ حذف کریں؟"
+
+msgid "Delete"
+msgstr "حذف کریں"
+
+msgid "with"
+msgstr "سے"
+
+msgid "Live site (now)"
+msgstr "لائیو سائٹ (ابھی)"
+
+msgid "Latest vs live site"
+msgstr "تازہ ترین بمقابلہ لائیو سائٹ"
+
+msgid "About Snapshots"
+msgstr "سنیپ شاٹس کے بارے میں"
+
+msgid "A snapshot records a lightweight fingerprint of every post, page and custom post type on your site, so you can detect changes later."
+msgstr "سنیپ شاٹ آپ کی سائٹ کی ہر پوسٹ، صفحے اور حسب ضرورت پوسٹ قسم کا ہلکا پھلکا فنگر پرنٹ ریکارڈ کرتا ہے، تاکہ آپ بعد میں تبدیلیاں معلوم کر سکیں۔"
+
+msgid "How to use"
+msgstr "استعمال کا طریقہ"
+
+msgid "Click \"Take snapshot\" to record the current state."
+msgstr "موجودہ حالت ریکارڈ کرنے کے لیے \"سنیپ شاٹ لیں\" پر کلک کریں۔"
+
+msgid "Later, use \"Latest vs live site\" to see what changed since then."
+msgstr "بعد میں \"تازہ ترین بمقابلہ لائیو سائٹ\" استعمال کریں تاکہ دیکھ سکیں کہ تب سے کیا بدلا۔"
+
+msgid "Review the highlighted rows; download the differences if needed."
+msgstr "نمایاں قطاروں کا جائزہ لیں؛ ضرورت ہو تو فرق ڈاؤن لوڈ کریں۔"
+
+msgid "Why it helps"
+msgstr "یہ کیوں مددگار ہے"
+
+msgid "Spot unauthorized or injected posts and pages."
+msgstr "غیر مجاز یا داخل کی گئی پوسٹس اور صفحات کی نشاندہی کریں۔"
+
+msgid "Confirm a migration moved everything across."
+msgstr "تصدیق کریں کہ منتقلی نے سب کچھ منتقل کر دیا۔"
+
+msgid "Keep an audit trail of content changes over time."
+msgstr "وقت کے ساتھ مواد کی تبدیلیوں کا ریکارڈ رکھیں۔"
+
+msgid "Result"
+msgstr "نتیجہ"
+
+msgid "This snapshot was captured with an older version of the plugin, so some differences may be inaccurate. Please take a fresh snapshot for reliable results."
+msgstr "یہ سنیپ شاٹ پلگ ان کے پرانے ورژن سے لیا گیا تھا، اس لیے کچھ فرق غلط ہو سکتے ہیں۔ قابلِ اعتماد نتائج کے لیے براہ کرم نیا سنیپ شاٹ لیں۔"
+
+msgid "No changes detected."
+msgstr "کوئی تبدیلی نہیں ملی۔"
+
+msgid "Highlighted rows are worth reviewing if you did not make these changes yourself: newly published pages, or a changed author or status."
+msgstr "اگر آپ نے یہ تبدیلیاں خود نہیں کیں تو نمایاں کی گئی قطاروں کا جائزہ لینا مناسب ہے: نئے شائع شدہ صفحات، یا تبدیل شدہ مصنف یا حیثیت۔"
+
+msgid "Download diff (CSV)"
+msgstr "فرق ڈاؤن لوڈ کریں (CSV)"
+
+msgid "Download diff (JSON)"
+msgstr "فرق ڈاؤن لوڈ کریں (JSON)"
+
+msgid "Export"
+msgstr "ایکسپورٹ"
+
+msgid "Snapshots"
+msgstr "سنیپ شاٹس"
+

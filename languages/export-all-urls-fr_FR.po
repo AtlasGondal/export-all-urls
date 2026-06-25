@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Export All URLs 6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/export-all-urls/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Below is a list of Exported Data:"
+msgstr "Voici la liste des données exportées :"
+
+msgid "Total number of links"
+msgstr "Nombre total de liens"
+
+msgid "Results per page:"
+msgstr "Résultats par page :"
+
+msgid "All"
+msgstr "Tous"
+
+msgid "Previous"
+msgstr "Précédent"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "Core"
+msgstr "Essentiel"
+
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+msgid "Author & Dates"
+msgstr "Auteur et dates"
+
+msgid "Content"
+msgstr "Contenu"
+
+msgid "Multilingual"
+msgstr "Multilingue"
+
+msgid "The \"Language\" column is each post's own language. The \"Translation URLs\" column lists the URL of every available translation of that post."
+msgstr "La colonne « Langue » est la langue propre de l'article. La colonne « URL des traductions » liste l'URL de chaque traduction disponible de cet article."
+
+msgid "SEO basics"
+msgstr "Bases SEO"
+
+msgid "Full audit"
+msgstr "Audit complet"
+
+msgid "None"
+msgstr "Aucun"
+
+msgid "Post ID"
+msgstr "ID de l'article"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Status"
+msgstr "Statut"
+
+msgid "Categories"
+msgstr "Catégories"
+
+msgid "Category URLs"
+msgstr "URL des catégories"
+
+msgid "Tags"
+msgstr "Étiquettes"
+
+msgid "Tag URLs"
+msgstr "URL des étiquettes"
+
+msgid "Author"
+msgstr "Auteur"
+
+msgid "Published Date"
+msgstr "Date de publication"
+
+msgid "Modified Date"
+msgstr "Date de modification"
+
+msgid "Word Count"
+msgstr "Nombre de mots"
+
+msgid "Excerpt"
+msgstr "Extrait"
+
+msgid "Featured Image URL"
+msgstr "URL de l'image mise en avant"
+
+msgid "Comment Count"
+msgstr "Nombre de commentaires"
+
+msgid "Slug"
+msgstr "Slug"
+
+msgid "Post Type"
+msgstr "Type d'article"
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Translation URLs"
+msgstr "URL des traductions"
+
+msgid "No result found in that range, please reselect and try again!"
+msgstr "Aucun résultat trouvé dans cette plage, veuillez resélectionner et réessayer !"
+
+msgid "Export All URLs"
+msgstr ""
+
+msgid "Sorry, you missed something. Please recheck the options, especially <strong>Export Fields</strong>, and try again. :)"
+msgstr "Il manque quelque chose. Veuillez vérifier les options, en particulier les <strong>champs d'export</strong>, et réessayer. :)"
+
+msgid "Invalid/Missing CSV File Name!"
+msgstr "Nom de fichier CSV invalide/manquant !"
+
+msgid "Sorry, invalid post date range. :)"
+msgstr "Plage de dates d'articles invalide. :)"
+
+msgid "Change"
+msgstr "Changement"
+
+msgid "Details"
+msgstr "Détails"
+
+msgid "Notable"
+msgstr "À examiner"
+
+msgid "Added"
+msgstr "Ajouté"
+
+msgid "Removed"
+msgstr "Supprimé"
+
+msgid "Modified"
+msgstr "Modifié"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous n'avez pas les autorisations suffisantes pour accéder à cette page."
+
+msgid "Security token validation failed!"
+msgstr "Échec de la validation du jeton de sécurité !"
+
+msgid "Invalid export type."
+msgstr "Type d'export invalide."
+
+msgid "Could not activate plugin: PHP version error"
+msgstr "Impossible d'activer l'extension : erreur de version PHP"
+
+msgid "PLUGIN:"
+msgstr "EXTENSION :"
+
+msgid "You are using PHP version"
+msgstr "Vous utilisez la version PHP"
+
+msgid "This plugin requires PHP version %s or greater."
+msgstr "Cette extension nécessite PHP version %s ou supérieure."
+
+msgid "WordPress itself recommends using PHP version 7.4 or greater"
+msgstr "WordPress recommande lui-même PHP version 7.4 ou supérieure"
+
+msgid "Official WordPress requirements"
+msgstr "Exigences officielles de WordPress"
+
+msgid "Please upgrade your PHP version or contact your Server administrator."
+msgstr "Veuillez mettre à jour votre version de PHP ou contacter votre administrateur serveur."
+
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr "Vous avez aimé %1$s ? Merci de nous laisser une note %2$s. Nous apprécions vraiment votre soutien !"
+
+msgid "All Types (pages, posts, and custom post types)"
+msgstr "Tous les types (pages, articles et types de publication personnalisés)"
+
+msgid "Pages"
+msgstr "Pages"
+
+msgid "Posts"
+msgstr "Articles"
+
+msgid "Published"
+msgstr "Publié"
+
+msgid "Pending"
+msgstr "En attente"
+
+msgid "Draft & Auto Draft"
+msgstr "Brouillon et brouillon automatique"
+
+msgid "Future Scheduled"
+msgstr "Planifié"
+
+msgid "Private"
+msgstr "Privé"
+
+msgid "Trashed"
+msgstr "Dans la corbeille"
+
+msgid "All (Published, Pending, Draft, Future Scheduled, Private & Trash)"
+msgstr "Tous (Publié, En attente, Brouillon, Planifié, Privé et Corbeille)"
+
+msgid "CSV File"
+msgstr "Fichier CSV"
+
+msgid "JSON File"
+msgstr "Fichier JSON"
+
+msgid "Hide Filter Options"
+msgstr "Masquer les options de filtre"
+
+msgid "Show Filter Options"
+msgstr "Afficher les options de filtre"
+
+msgid "Hide Advanced Options"
+msgstr "Masquer les options avancées"
+
+msgid "Show Advanced Options"
+msgstr "Afficher les options avancées"
+
+msgid "Export Data from your Site"
+msgstr "Exporter les données de votre site"
+
+msgid "Select a Post Type to Extract Data:"
+msgstr "Sélectionnez un type d'article pour extraire les données :"
+
+msgid "Export Fields:"
+msgstr "Champs d'export :"
+
+msgid "Presets:"
+msgstr "Préréglages :"
+
+msgid "Select all"
+msgstr "Tout sélectionner"
+
+msgid "Post Status:"
+msgstr "Statut des articles :"
+
+msgid "Languages:"
+msgstr "Langues :"
+
+msgid "All languages"
+msgstr "Toutes les langues"
+
+msgid "Default language only"
+msgstr "Langue par défaut uniquement"
+
+msgid "Controls which languages are exported, regardless of the language selected in the admin bar."
+msgstr "Détermine les langues exportées, quelle que soit la langue sélectionnée dans la barre d'administration."
+
+msgid "Date Range:"
+msgstr "Plage de dates :"
+
+msgid "From:"
+msgstr "Du :"
+
+msgid "To:"
+msgstr "Au :"
+
+msgid "By Author:"
+msgstr "Par auteur :"
+
+msgid "Exclude Domain URL:"
+msgstr "Exclure le domaine des URL :"
+
+msgid "Enable this option to remove the domain from URLs, e.g., 'example.com/sample-post/' becomes '/sample-post/'"
+msgstr "Activez cette option pour retirer le domaine des URL, par ex. « example.com/sample-post/ » devient « /sample-post/ »"
+
+msgid "Number of Posts:"
+msgstr "Nombre d'articles :"
+
+msgid "Specify Post Range to Extract, It is very useful in case of Memory Out Error!"
+msgstr "Spécifiez la plage d'articles à extraire. Très utile en cas d'erreur de mémoire insuffisante !"
+
+msgid "Specify Range"
+msgstr "Spécifier une plage"
+
+msgid "Download File Name:"
+msgstr "Nom du fichier à télécharger :"
+
+msgid "Download Format:"
+msgstr "Format de téléchargement :"
+
+msgid "Download"
+msgstr "Télécharger"
+
+msgid "Display Here"
+msgstr "Afficher ici"
+
+msgid "Want to Support?"
+msgstr "Envie de soutenir ?"
+
+msgid "If you enjoyed the plugin, and want to support:"
+msgstr "Si vous avez apprécié l'extension et souhaitez la soutenir :"
+
+msgid "Hire me"
+msgstr "Engagez-moi"
+
+msgid "on a project"
+msgstr "sur un projet"
+
+msgid "Buy me a Coffee (donate via PayPal)"
+msgstr "Offrez-moi un café (faire un don via PayPal)"
+
+msgid "Wanna say Thanks?"
+msgstr "Envie de dire merci ?"
+
+msgid "Leave"
+msgstr "Laissez une"
+
+msgid "rating"
+msgstr "note"
+
+msgid "Follow me on X:"
+msgstr "Suivez-moi sur X :"
+
+msgid "Got a Problem?"
+msgstr "Un problème ?"
+
+msgid "Want to report a bug or suggest a feature? You can:"
+msgstr "Vous voulez signaler un bug ou suggérer une fonctionnalité ? Vous pouvez :"
+
+msgid "Create"
+msgstr "Créer un"
+
+msgid "Support Ticket"
+msgstr "Ticket d'assistance"
+
+msgid "Write me an"
+msgstr "Écrivez-moi un"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Developed by:"
+msgstr "Développé par :"
+
+msgid "New"
+msgstr "Nouveau"
+
+msgid "Custom fields"
+msgstr "Champs personnalisés"
+
+msgid "Featured image"
+msgstr "Image mise en avant"
+
+msgid "Changed"
+msgstr "Modifié"
+
+msgid "Snapshot created."
+msgstr "Instantané créé."
+
+msgid "Snapshot deleted."
+msgstr "Instantané supprimé."
+
+msgid "Could not create the snapshot."
+msgstr "Impossible de créer l'instantané."
+
+msgid "Take a new snapshot"
+msgstr "Prendre un nouvel instantané"
+
+msgid "Optional label, e.g. before migration"
+msgstr "Étiquette facultative, par ex. avant la migration"
+
+msgid "Take snapshot"
+msgstr "Prendre l'instantané"
+
+msgid "Records a fingerprint of every post and page (all types, all languages) so you can detect changes later."
+msgstr "Enregistre une empreinte de chaque article et page (tous types, toutes langues) pour détecter les changements plus tard."
+
+msgid "Saved snapshots"
+msgstr "Instantanés enregistrés"
+
+msgid "No snapshots yet. Take your first snapshot above."
+msgstr "Aucun instantané pour l'instant. Prenez votre premier instantané ci-dessus."
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Label"
+msgstr "Étiquette"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Compare"
+msgstr "Comparer"
+
+msgid "Delete this snapshot?"
+msgstr "Supprimer cet instantané ?"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "with"
+msgstr "avec"
+
+msgid "Live site (now)"
+msgstr "Site en ligne (maintenant)"
+
+msgid "Latest vs live site"
+msgstr "Dernier vs site en ligne"
+
+msgid "About Snapshots"
+msgstr "À propos des instantanés"
+
+msgid "A snapshot records a lightweight fingerprint of every post, page and custom post type on your site, so you can detect changes later."
+msgstr "Un instantané enregistre une empreinte légère de chaque article, page et type de publication personnalisé de votre site, afin de détecter les changements plus tard."
+
+msgid "How to use"
+msgstr "Comment l'utiliser"
+
+msgid "Click \"Take snapshot\" to record the current state."
+msgstr "Cliquez sur « Prendre l'instantané » pour enregistrer l'état actuel."
+
+msgid "Later, use \"Latest vs live site\" to see what changed since then."
+msgstr "Plus tard, utilisez « Dernier vs site en ligne » pour voir ce qui a changé depuis."
+
+msgid "Review the highlighted rows; download the differences if needed."
+msgstr "Examinez les lignes en surbrillance ; téléchargez les différences si nécessaire."
+
+msgid "Why it helps"
+msgstr "Pourquoi c'est utile"
+
+msgid "Spot unauthorized or injected posts and pages."
+msgstr "Repérez les articles et pages non autorisés ou injectés."
+
+msgid "Confirm a migration moved everything across."
+msgstr "Confirmez qu'une migration a tout transféré."
+
+msgid "Keep an audit trail of content changes over time."
+msgstr "Conservez un historique des modifications de contenu dans le temps."
+
+msgid "Result"
+msgstr "Résultat"
+
+msgid "This snapshot was captured with an older version of the plugin, so some differences may be inaccurate. Please take a fresh snapshot for reliable results."
+msgstr "Cet instantané a été pris avec une version plus ancienne de l'extension ; certaines différences peuvent donc être inexactes. Veuillez prendre un nouvel instantané pour des résultats fiables."
+
+msgid "No changes detected."
+msgstr "Aucun changement détecté."
+
+msgid "Highlighted rows are worth reviewing if you did not make these changes yourself: newly published pages, or a changed author or status."
+msgstr "Les lignes en surbrillance méritent un examen si vous n'avez pas effectué ces changements vous-même : pages nouvellement publiées, ou un auteur ou statut modifié."
+
+msgid "Download diff (CSV)"
+msgstr "Télécharger les différences (CSV)"
+
+msgid "Download diff (JSON)"
+msgstr "Télécharger les différences (JSON)"
+
+msgid "Export"
+msgstr "Exporter"
+
+msgid "Snapshots"
+msgstr "Instantanés"
+

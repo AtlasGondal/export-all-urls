@@ -5,7 +5,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    overflow: hidden
+    overflow: visible
 }
 
 #eauMainContainer {
@@ -14,13 +14,12 @@
 }
 
 #eauSideContainer {
-    width: 24%
+    width: 24%;
+    display: block;
 }
 
 #eauSideContainer .postbox:first-child {
     margin-left: 20px;
-    padding-top: 10%;
-    display: grid;
 }
 
 .eaucolumns {
@@ -33,7 +32,10 @@
 
 #eauSideContainer .postbox {
     margin-bottom: 0;
-    float: none
+    float: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 32px;
 }
 
 #eauSideContainer .inside {
@@ -115,4 +117,273 @@
     background-color: #eee;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+/* --- Export field selector: presets + collapsible groups --- */
+
+.eau-presets {
+    margin-bottom: 12px;
+}
+
+.eau-presets-label {
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.eau-presets .eau-preset {
+    margin-right: 4px;
+}
+
+.eau-field-group {
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background: #fff;
+}
+
+.eau-field-group > summary {
+    cursor: pointer;
+    padding: 8px 12px;
+    font-weight: 600;
+    list-style: none;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.eau-field-group[open] > summary {
+    border-bottom: 1px solid #dcdcde;
+    border-radius: 4px 4px 0 0;
+}
+
+.eau-field-group > summary::-webkit-details-marker {
+    display: none;
+}
+
+.eau-field-group > summary::before {
+    content: "\25B8";
+    display: inline-block;
+    margin-right: 8px;
+    color: #646970;
+}
+
+.eau-field-group[open] > summary::before {
+    content: "\25BE";
+}
+
+.eau-group-tools {
+    padding: 8px 12px 0;
+    font-size: 12px;
+}
+
+.eau-field-group .eau-group-description {
+    margin: 8px 12px 0;
+}
+
+.eau-field-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 4px 16px;
+    padding: 8px 12px 12px;
+}
+
+.eau-field-grid label {
+    display: block;
+    white-space: nowrap;
+}
+
+/* --- Results pagination --- */
+
+.eau-results-toolbar {
+    margin: 0 20px 12px 0;
+    text-align: right;
+}
+
+.eau-results-toolbar .eau-perpage-label {
+    font-weight: 600;
+}
+
+.eau-pagination {
+    margin: 14px 0;
+    text-align: center;
+}
+
+.eau-pagination .eau-page-indicator {
+    margin: 0 12px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+/* --- Locally hosted PayPal donate button (no remote asset) --- */
+
+.eau-paypal-btn {
+    display: inline-block;
+    width: 160px;
+    height: 48px;
+    background: url("../images/paypal-donate.svg") no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+/* --- Snapshots tab --- */
+
+.eau-page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 12px 0 10px;
+    color: #1d2327;
+}
+
+.eau-tab-nav {
+    margin-bottom: 1em;
+}
+
+#eauSideContainer ol {
+    margin: 6px 0 6px 4px;
+}
+
+#eauSideContainer ol li {
+    list-style: decimal;
+    margin-left: 22px;
+}
+
+.eau-snapshot-take,
+.eau-compare-form {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 12px 0 20px;
+}
+
+.eau-snapshot-take .eau-take-label {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.eau-snapshot-take input[type="text"],
+.eau-compare-form label {
+    margin-right: 8px;
+}
+
+.eau-diff-summary {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 12px 0 18px;
+}
+
+.eau-card {
+    flex: 1;
+    min-width: 120px;
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.eau-card-label {
+    font-size: 13px;
+}
+
+.eau-card-num {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.eau-card-added {
+    background: #edfaef;
+}
+
+.eau-card-added .eau-card-label,
+.eau-card-added .eau-card-num {
+    color: #1a7f37;
+}
+
+.eau-card-removed {
+    background: #fcebea;
+}
+
+.eau-card-removed .eau-card-label,
+.eau-card-removed .eau-card-num {
+    color: #b32d2e;
+}
+
+.eau-card-suspicious {
+    background: #fef8e7;
+}
+
+.eau-card-suspicious .eau-card-label,
+.eau-card-suspicious .eau-card-num {
+    color: #8a6d1b;
+}
+
+.eau-card-modified {
+    background: #fef8e7;
+}
+
+.eau-card-modified .eau-card-label,
+.eau-card-modified .eau-card-num {
+    color: #8a6d1b;
+}
+
+.eau-diff-heading {
+    margin: 18px 0 6px;
+}
+
+.eau-diff-table {
+    margin-bottom: 8px;
+}
+
+.eau-diff-table .eau-flag-col {
+    width: 28px;
+    text-align: center;
+}
+
+.eau-diff-table td a {
+    word-break: break-all;
+}
+
+.eau-suspicious td {
+    background: #fef8e7 !important;
+}
+
+.eau-suspicious .dashicons-warning,
+.eau-suspicious-note .dashicons-warning {
+    color: #8a6d1b;
+    vertical-align: middle;
+}
+
+.eau-badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin: 1px 2px 1px 0;
+    white-space: nowrap;
+}
+
+.eau-badge-new {
+    background: #edfaef;
+    color: #1a7f37;
+}
+
+.eau-badge-removed,
+.eau-badge-danger {
+    background: #fcebea;
+    color: #b32d2e;
+}
+
+.eau-badge-neutral {
+    background: #f0f0f1;
+    color: #50575e;
+}
+
+.eau-badge-warn {
+    background: #fef8e7;
+    color: #8a6d1b;
+}
+
+.eau-diff-download {
+    margin-top: 12px;
 }

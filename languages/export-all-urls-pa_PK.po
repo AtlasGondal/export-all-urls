@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Export All URLs 6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/export-all-urls/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pa_PK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Below is a list of Exported Data:"
+msgstr "تھلے ایکسپورٹ کیتے ڈیٹا دی فہرست اے:"
+
+msgid "Total number of links"
+msgstr "لنکاں دی کل گنتی"
+
+msgid "Results per page:"
+msgstr "فی صفحہ نتیجے:"
+
+msgid "All"
+msgstr "سارے"
+
+msgid "Previous"
+msgstr "پچھلا"
+
+msgid "Next"
+msgstr "اگلا"
+
+msgid "Core"
+msgstr "بنیادی"
+
+msgid "Taxonomy"
+msgstr "درجہ بندی"
+
+msgid "Author & Dates"
+msgstr "لکھاری تے تریخاں"
+
+msgid "Content"
+msgstr "مواد"
+
+msgid "Multilingual"
+msgstr "کئی زباناں"
+
+msgid "The \"Language\" column is each post's own language. The \"Translation URLs\" column lists the URL of every available translation of that post."
+msgstr "\"زبان\" کالم ہر پوسٹ دی اپنی زبان اے۔ \"ترجمہ URLs\" کالم اوس پوسٹ دے ہر دستیاب ترجمے دا URL دسدا اے۔"
+
+msgid "SEO basics"
+msgstr "SEO بنیادی گلاں"
+
+msgid "Full audit"
+msgstr "مکمل آڈٹ"
+
+msgid "None"
+msgstr "کوئی نہیں"
+
+msgid "Post ID"
+msgstr "پوسٹ ID"
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Status"
+msgstr "حیثیت"
+
+msgid "Categories"
+msgstr "زمرے"
+
+msgid "Category URLs"
+msgstr "زمرہ URLs"
+
+msgid "Tags"
+msgstr "ٹیگ"
+
+msgid "Tag URLs"
+msgstr "ٹیگ URLs"
+
+msgid "Author"
+msgstr "لکھاری"
+
+msgid "Published Date"
+msgstr "اشاعت دی تریخ"
+
+msgid "Modified Date"
+msgstr "تبدیلی دی تریخ"
+
+msgid "Word Count"
+msgstr "لفظاں دی گنتی"
+
+msgid "Excerpt"
+msgstr "اقتباس"
+
+msgid "Featured Image URL"
+msgstr "نمایاں تصویر دا URL"
+
+msgid "Comment Count"
+msgstr "تبصریاں دی گنتی"
+
+msgid "Slug"
+msgstr "سلگ"
+
+msgid "Post Type"
+msgstr "پوسٹ دی قسم"
+
+msgid "Language"
+msgstr "زبان"
+
+msgid "Translation URLs"
+msgstr "ترجمہ URLs"
+
+msgid "No result found in that range, please reselect and try again!"
+msgstr "ایس حد وچ کوئی نتیجہ نہیں ملیا، مہربانی کر کے دوبارہ چنو تے فیر کوشش کرو!"
+
+msgid "Export All URLs"
+msgstr ""
+
+msgid "Sorry, you missed something. Please recheck the options, especially <strong>Export Fields</strong>, and try again. :)"
+msgstr "کجھ رہ گیا اے۔ مہربانی کر کے اختیار خاص کر کے <strong>ایکسپورٹ فیلڈز</strong> دوبارہ ویکھو تے فیر کوشش کرو۔ :)"
+
+msgid "Invalid/Missing CSV File Name!"
+msgstr "غلط/گمشدہ CSV فائل دا ناں!"
+
+msgid "Sorry, invalid post date range. :)"
+msgstr "معذرت، پوسٹ دیاں تریخاں دی حد غلط اے۔ :)"
+
+msgid "Change"
+msgstr "تبدیلی"
+
+msgid "Details"
+msgstr "تفصیلاں"
+
+msgid "Notable"
+msgstr "دھیان جوگا"
+
+msgid "Added"
+msgstr "شامل کیتا"
+
+msgid "Removed"
+msgstr "ہٹایا"
+
+msgid "Modified"
+msgstr "سودھیا"
+
+msgid "Yes"
+msgstr "ہاں"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "تہاکوں ایس صفحے تک پہنچ دی کافی اجازت نہیں ہے۔"
+
+msgid "Security token validation failed!"
+msgstr "سیکیورٹی ٹوکن دی تصدیق ناکام ہو گئی!"
+
+msgid "Invalid export type."
+msgstr "غلط ایکسپورٹ قسم۔"
+
+msgid "Could not activate plugin: PHP version error"
+msgstr "پلگ ان چالو نہیں ہو سکیا: PHP ورژن دی خرابی"
+
+msgid "PLUGIN:"
+msgstr "پلگ ان:"
+
+msgid "You are using PHP version"
+msgstr "تسیں PHP ورژن ورت رہے او"
+
+msgid "This plugin requires PHP version %s or greater."
+msgstr "ایس پلگ ان نوں PHP ورژن %s یا ایس توں ودھ چاہیدا اے۔"
+
+msgid "WordPress itself recommends using PHP version 7.4 or greater"
+msgstr "WordPress آپ PHP ورژن 7.4 یا ایس توں ودھ ورتن دی صلاح دیندا اے"
+
+msgid "Official WordPress requirements"
+msgstr "WordPress دیاں سرکاری لوڑاں"
+
+msgid "Please upgrade your PHP version or contact your Server administrator."
+msgstr "مہربانی کر کے اپنا PHP ورژن اپ گریڈ کرو یا اپنے سرور ایڈمنسٹریٹر نال رابطہ کرو۔"
+
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr "کیہ تہانوں %1$s چنگا لگیا؟ مہربانی کر کے سانوں %2$s درجہ بندی دیو۔ اسیں تہاڈے تعاون دے بہت شکر گزار آں!"
+
+msgid "All Types (pages, posts, and custom post types)"
+msgstr "ساریاں قسماں (صفحے، پوسٹاں، تے اپنی مرضی دیاں پوسٹ قسماں)"
+
+msgid "Pages"
+msgstr "صفحے"
+
+msgid "Posts"
+msgstr "پوسٹاں"
+
+msgid "Published"
+msgstr "شائع شدہ"
+
+msgid "Pending"
+msgstr "زیر التوا"
+
+msgid "Draft & Auto Draft"
+msgstr "مسودہ تے خودکار مسودہ"
+
+msgid "Future Scheduled"
+msgstr "شیڈول شدہ"
+
+msgid "Private"
+msgstr "نجی"
+
+msgid "Trashed"
+msgstr "ردی وچ"
+
+msgid "All (Published, Pending, Draft, Future Scheduled, Private & Trash)"
+msgstr "سارے (شائع شدہ، زیر التوا، مسودہ، شیڈول شدہ، نجی تے ردی)"
+
+msgid "CSV File"
+msgstr "CSV فائل"
+
+msgid "JSON File"
+msgstr "JSON فائل"
+
+msgid "Hide Filter Options"
+msgstr "فلٹر اختیار لکاؤ"
+
+msgid "Show Filter Options"
+msgstr "فلٹر اختیار وکھاؤ"
+
+msgid "Hide Advanced Options"
+msgstr "اعلیٰ اختیار لکاؤ"
+
+msgid "Show Advanced Options"
+msgstr "اعلیٰ اختیار وکھاؤ"
+
+msgid "Export Data from your Site"
+msgstr "اپنی سائٹ توں ڈیٹا ایکسپورٹ کرو"
+
+msgid "Select a Post Type to Extract Data:"
+msgstr "ڈیٹا کڈھن لئی پوسٹ دی قسم چنو:"
+
+msgid "Export Fields:"
+msgstr "ایکسپورٹ فیلڈز:"
+
+msgid "Presets:"
+msgstr "پری سیٹس:"
+
+msgid "Select all"
+msgstr "سارے چنو"
+
+msgid "Post Status:"
+msgstr "پوسٹ دی حیثیت:"
+
+msgid "Languages:"
+msgstr "زباناں:"
+
+msgid "All languages"
+msgstr "ساریاں زباناں"
+
+msgid "Default language only"
+msgstr "صرف ڈیفالٹ زبان"
+
+msgid "Controls which languages are exported, regardless of the language selected in the admin bar."
+msgstr "ایہہ کنٹرول کردا اے کہ کیہڑیاں زباناں ایکسپورٹ ہون، بھانویں ایڈمن بار وچ کوئی وی زبان چنی گئی ہووے۔"
+
+msgid "Date Range:"
+msgstr "تریخاں دی حد:"
+
+msgid "From:"
+msgstr "توں:"
+
+msgid "To:"
+msgstr "تیکر:"
+
+msgid "By Author:"
+msgstr "لکھاری دے حساب نال:"
+
+msgid "Exclude Domain URL:"
+msgstr "ڈومین URL کڈھ دیو:"
+
+msgid "Enable this option to remove the domain from URLs, e.g., 'example.com/sample-post/' becomes '/sample-post/'"
+msgstr "ایہہ اختیار چالو کرو تاں جو URLs توں ڈومین ہٹ جاوے، مثلاً 'example.com/sample-post/' بن جاوے گا '/sample-post/'"
+
+msgid "Number of Posts:"
+msgstr "پوسٹاں دی گنتی:"
+
+msgid "Specify Post Range to Extract, It is very useful in case of Memory Out Error!"
+msgstr "کڈھن لئی پوسٹ دی حد دسو، ایہہ میموری مکن دی خرابی وچ بہت کم آؤندا اے!"
+
+msgid "Specify Range"
+msgstr "حد دسو"
+
+msgid "Download File Name:"
+msgstr "ڈاؤن لوڈ فائل دا ناں:"
+
+msgid "Download Format:"
+msgstr "ڈاؤن لوڈ فارمیٹ:"
+
+msgid "Download"
+msgstr "ڈاؤن لوڈ"
+
+msgid "Display Here"
+msgstr "ایتھے وکھاؤ"
+
+msgid "Want to Support?"
+msgstr "مدد کرنا چاہندے او؟"
+
+msgid "If you enjoyed the plugin, and want to support:"
+msgstr "جے تہانوں پلگ ان چنگا لگیا تے تسیں مدد کرنا چاہندے او:"
+
+msgid "Hire me"
+msgstr "مینوں کم تے رکھو"
+
+msgid "on a project"
+msgstr "کسے پروجیکٹ تے"
+
+msgid "Buy me a Coffee (donate via PayPal)"
+msgstr "مینوں کافی پلاؤ (PayPal راہیں عطیہ دیو)"
+
+msgid "Wanna say Thanks?"
+msgstr "شکریہ آکھنا چاہندے او؟"
+
+msgid "Leave"
+msgstr "سانوں"
+
+msgid "rating"
+msgstr "درجہ بندی دیو"
+
+msgid "Follow me on X:"
+msgstr "X تے فالو کرو:"
+
+msgid "Got a Problem?"
+msgstr "کوئی مسئلہ اے؟"
+
+msgid "Want to report a bug or suggest a feature? You can:"
+msgstr "بگ رپورٹ کرنا یا کوئی فیچر تجویز کرنا چاہندے او؟ تسیں ایہہ کر سکدے او:"
+
+msgid "Create"
+msgstr "بناؤ"
+
+msgid "Support Ticket"
+msgstr "سپورٹ ٹکٹ"
+
+msgid "Write me an"
+msgstr "مینوں لکھو"
+
+msgid "Email"
+msgstr "ای میل"
+
+msgid "Developed by:"
+msgstr "تیار کیتا:"
+
+msgid "New"
+msgstr "نواں"
+
+msgid "Custom fields"
+msgstr "حسب ضرورت فیلڈز"
+
+msgid "Featured image"
+msgstr "نمایاں تصویر"
+
+msgid "Changed"
+msgstr "بدلیا"
+
+msgid "Snapshot created."
+msgstr "سنیپ شاٹ بنا دتا گیا۔"
+
+msgid "Snapshot deleted."
+msgstr "سنیپ شاٹ مٹا دتا گیا۔"
+
+msgid "Could not create the snapshot."
+msgstr "سنیپ شاٹ نہیں بن سکیا۔"
+
+msgid "Take a new snapshot"
+msgstr "نواں سنیپ شاٹ لو"
+
+msgid "Optional label, e.g. before migration"
+msgstr "اختیاری لیبل، مثلاً منتقلی توں پہلاں"
+
+msgid "Take snapshot"
+msgstr "سنیپ شاٹ لو"
+
+msgid "Records a fingerprint of every post and page (all types, all languages) so you can detect changes later."
+msgstr "ہر پوسٹ تے صفحے (ساریاں قسماں، ساریاں زباناں) دا فنگر پرنٹ ریکارڈ کردا اے تاں جو تسیں بعد وچ تبدیلیاں لبھ سکو۔"
+
+msgid "Saved snapshots"
+msgstr "محفوظ سنیپ شاٹس"
+
+msgid "No snapshots yet. Take your first snapshot above."
+msgstr "ہلے کوئی سنیپ شاٹ نہیں۔ اُتے اپنا پہلا سنیپ شاٹ لو۔"
+
+msgid "Date"
+msgstr "تریخ"
+
+msgid "Label"
+msgstr "لیبل"
+
+msgid "Actions"
+msgstr "عمل"
+
+msgid "Compare"
+msgstr "موازنہ کرو"
+
+msgid "Delete this snapshot?"
+msgstr "ایہہ سنیپ شاٹ مٹاؤ؟"
+
+msgid "Delete"
+msgstr "مٹاؤ"
+
+msgid "with"
+msgstr "نال"
+
+msgid "Live site (now)"
+msgstr "لائیو سائٹ (ہُن)"
+
+msgid "Latest vs live site"
+msgstr "تازہ ترین بمقابلہ لائیو سائٹ"
+
+msgid "About Snapshots"
+msgstr "سنیپ شاٹس بارے"
+
+msgid "A snapshot records a lightweight fingerprint of every post, page and custom post type on your site, so you can detect changes later."
+msgstr "سنیپ شاٹ تہاڈی سائٹ دی ہر پوسٹ، صفحے تے حسب ضرورت پوسٹ قسم دا ہلکا فنگر پرنٹ ریکارڈ کردا اے، تاں جو تسیں بعد وچ تبدیلیاں لبھ سکو۔"
+
+msgid "How to use"
+msgstr "ورتن دا طریقہ"
+
+msgid "Click \"Take snapshot\" to record the current state."
+msgstr "موجودہ حالت ریکارڈ کرن لئی \"سنیپ شاٹ لو\" تے کلک کرو۔"
+
+msgid "Later, use \"Latest vs live site\" to see what changed since then."
+msgstr "بعد وچ \"تازہ ترین بمقابلہ لائیو سائٹ\" ورتو تاں جو ویکھ سکو کہ اودوں توں کیہ بدلیا۔"
+
+msgid "Review the highlighted rows; download the differences if needed."
+msgstr "نمایاں قطاراں دا جائزہ لو؛ لوڑ ہووے تاں فرق ڈاؤن لوڈ کرو۔"
+
+msgid "Why it helps"
+msgstr "ایہہ کیوں مددگار اے"
+
+msgid "Spot unauthorized or injected posts and pages."
+msgstr "غیر مجاز یا پائیاں گئیاں پوسٹاں تے صفحیاں نوں لبھو۔"
+
+msgid "Confirm a migration moved everything across."
+msgstr "تصدیق کرو کہ منتقلی نے سب کجھ منتقل کر دتا۔"
+
+msgid "Keep an audit trail of content changes over time."
+msgstr "ویلے نال مواد دیاں تبدیلیاں دا ریکارڈ رکھو۔"
+
+msgid "Result"
+msgstr "نتیجہ"
+
+msgid "This snapshot was captured with an older version of the plugin, so some differences may be inaccurate. Please take a fresh snapshot for reliable results."
+msgstr "ایہہ سنیپ شاٹ پلگ ان دے پرانے ورژن نال لیا گیا سی، ایس لئی کجھ فرق غلط ہو سکدے نیں۔ بھروسے یوگ نتیجیاں لئی مہربانی کر کے نواں سنیپ شاٹ لو۔"
+
+msgid "No changes detected."
+msgstr "کوئی تبدیلی نہیں لبھی۔"
+
+msgid "Highlighted rows are worth reviewing if you did not make these changes yourself: newly published pages, or a changed author or status."
+msgstr "جے تسیں ایہہ تبدیلیاں آپ نہیں کیتیاں تاں نمایاں کیتیاں قطاراں دا جائزہ لینا چنگا اے: نویں شائع ہوئے صفحے، یا بدلیا ہویا لکھاری یا حیثیت۔"
+
+msgid "Download diff (CSV)"
+msgstr "فرق ڈاؤن لوڈ کرو (CSV)"
+
+msgid "Download diff (JSON)"
+msgstr "فرق ڈاؤن لوڈ کرو (JSON)"
+
+msgid "Export"
+msgstr "ایکسپورٹ"
+
+msgid "Snapshots"
+msgstr "سنیپ شاٹس"
+

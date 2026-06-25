@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Export All URLs 6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/export-all-urls/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Below is a list of Exported Data:"
+msgstr "エクスポートされたデータの一覧:"
+
+msgid "Total number of links"
+msgstr "リンクの総数"
+
+msgid "Results per page:"
+msgstr "1ページあたりの表示件数:"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "Previous"
+msgstr "前へ"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Core"
+msgstr "基本"
+
+msgid "Taxonomy"
+msgstr "タクソノミー"
+
+msgid "Author & Dates"
+msgstr "投稿者と日付"
+
+msgid "Content"
+msgstr "コンテンツ"
+
+msgid "Multilingual"
+msgstr "多言語"
+
+msgid "The \"Language\" column is each post's own language. The \"Translation URLs\" column lists the URL of every available translation of that post."
+msgstr "「言語」列は各投稿自身の言語です。「翻訳 URL」列はその投稿の利用可能なすべての翻訳の URL を一覧表示します。"
+
+msgid "SEO basics"
+msgstr "SEO の基本"
+
+msgid "Full audit"
+msgstr "完全な監査"
+
+msgid "None"
+msgstr "なし"
+
+msgid "Post ID"
+msgstr "投稿 ID"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Status"
+msgstr "ステータス"
+
+msgid "Categories"
+msgstr "カテゴリー"
+
+msgid "Category URLs"
+msgstr "カテゴリー URL"
+
+msgid "Tags"
+msgstr "タグ"
+
+msgid "Tag URLs"
+msgstr "タグ URL"
+
+msgid "Author"
+msgstr "投稿者"
+
+msgid "Published Date"
+msgstr "公開日"
+
+msgid "Modified Date"
+msgstr "更新日"
+
+msgid "Word Count"
+msgstr "単語数"
+
+msgid "Excerpt"
+msgstr "抜粋"
+
+msgid "Featured Image URL"
+msgstr "アイキャッチ画像 URL"
+
+msgid "Comment Count"
+msgstr "コメント数"
+
+msgid "Slug"
+msgstr "スラッグ"
+
+msgid "Post Type"
+msgstr "投稿タイプ"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Translation URLs"
+msgstr "翻訳 URL"
+
+msgid "No result found in that range, please reselect and try again!"
+msgstr "その範囲では結果が見つかりませんでした。選択し直して、もう一度お試しください！"
+
+msgid "Export All URLs"
+msgstr ""
+
+msgid "Sorry, you missed something. Please recheck the options, especially <strong>Export Fields</strong>, and try again. :)"
+msgstr "入力が不足しています。オプション、特に <strong>エクスポート項目</strong> を確認して、もう一度お試しください。:)"
+
+msgid "Invalid/Missing CSV File Name!"
+msgstr "CSV ファイル名が無効または未入力です！"
+
+msgid "Sorry, invalid post date range. :)"
+msgstr "投稿の日付範囲が無効です。:)"
+
+msgid "Change"
+msgstr "変更"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "Notable"
+msgstr "要確認"
+
+msgid "Added"
+msgstr "追加"
+
+msgid "Removed"
+msgstr "削除"
+
+msgid "Modified"
+msgstr "変更"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "このページにアクセスするための十分な権限がありません。"
+
+msgid "Security token validation failed!"
+msgstr "セキュリティトークンの検証に失敗しました！"
+
+msgid "Invalid export type."
+msgstr "無効なエクスポート形式です。"
+
+msgid "Could not activate plugin: PHP version error"
+msgstr "プラグインを有効化できませんでした: PHP バージョンエラー"
+
+msgid "PLUGIN:"
+msgstr "プラグイン:"
+
+msgid "You are using PHP version"
+msgstr "ご使用の PHP バージョン"
+
+msgid "This plugin requires PHP version %s or greater."
+msgstr "このプラグインには PHP バージョン %s 以上が必要です。"
+
+msgid "WordPress itself recommends using PHP version 7.4 or greater"
+msgstr "WordPress 自体は PHP バージョン 7.4 以上の使用を推奨しています"
+
+msgid "Official WordPress requirements"
+msgstr "WordPress の公式要件"
+
+msgid "Please upgrade your PHP version or contact your Server administrator."
+msgstr "PHP のバージョンをアップグレードするか、サーバー管理者にお問い合わせください。"
+
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr "%1$s を気に入っていただけましたか？ぜひ %2$s の評価をお寄せください。ご支援に心より感謝します！"
+
+msgid "All Types (pages, posts, and custom post types)"
+msgstr "すべてのタイプ（固定ページ、投稿、カスタム投稿タイプ）"
+
+msgid "Pages"
+msgstr "固定ページ"
+
+msgid "Posts"
+msgstr "投稿"
+
+msgid "Published"
+msgstr "公開済み"
+
+msgid "Pending"
+msgstr "レビュー待ち"
+
+msgid "Draft & Auto Draft"
+msgstr "下書きと自動下書き"
+
+msgid "Future Scheduled"
+msgstr "予約投稿"
+
+msgid "Private"
+msgstr "非公開"
+
+msgid "Trashed"
+msgstr "ゴミ箱"
+
+msgid "All (Published, Pending, Draft, Future Scheduled, Private & Trash)"
+msgstr "すべて（公開済み、レビュー待ち、下書き、予約投稿、非公開、ゴミ箱）"
+
+msgid "CSV File"
+msgstr "CSV ファイル"
+
+msgid "JSON File"
+msgstr "JSON ファイル"
+
+msgid "Hide Filter Options"
+msgstr "フィルターオプションを隠す"
+
+msgid "Show Filter Options"
+msgstr "フィルターオプションを表示"
+
+msgid "Hide Advanced Options"
+msgstr "詳細オプションを隠す"
+
+msgid "Show Advanced Options"
+msgstr "詳細オプションを表示"
+
+msgid "Export Data from your Site"
+msgstr "サイトからデータをエクスポート"
+
+msgid "Select a Post Type to Extract Data:"
+msgstr "データを抽出する投稿タイプを選択してください:"
+
+msgid "Export Fields:"
+msgstr "エクスポート項目:"
+
+msgid "Presets:"
+msgstr "プリセット:"
+
+msgid "Select all"
+msgstr "すべて選択"
+
+msgid "Post Status:"
+msgstr "投稿ステータス:"
+
+msgid "Languages:"
+msgstr "言語:"
+
+msgid "All languages"
+msgstr "すべての言語"
+
+msgid "Default language only"
+msgstr "既定の言語のみ"
+
+msgid "Controls which languages are exported, regardless of the language selected in the admin bar."
+msgstr "管理バーで選択された言語に関係なく、どの言語をエクスポートするかを制御します。"
+
+msgid "Date Range:"
+msgstr "日付範囲:"
+
+msgid "From:"
+msgstr "開始:"
+
+msgid "To:"
+msgstr "終了:"
+
+msgid "By Author:"
+msgstr "投稿者で絞り込み:"
+
+msgid "Exclude Domain URL:"
+msgstr "ドメイン URL を除外:"
+
+msgid "Enable this option to remove the domain from URLs, e.g., 'example.com/sample-post/' becomes '/sample-post/'"
+msgstr "このオプションを有効にすると、URL からドメインが削除されます。例: 'example.com/sample-post/' は '/sample-post/' になります"
+
+msgid "Number of Posts:"
+msgstr "投稿数:"
+
+msgid "Specify Post Range to Extract, It is very useful in case of Memory Out Error!"
+msgstr "抽出する投稿の範囲を指定します。メモリ不足エラーの場合にとても便利です！"
+
+msgid "Specify Range"
+msgstr "範囲を指定"
+
+msgid "Download File Name:"
+msgstr "ダウンロードファイル名:"
+
+msgid "Download Format:"
+msgstr "ダウンロード形式:"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Display Here"
+msgstr "ここに表示"
+
+msgid "Want to Support?"
+msgstr "応援しませんか？"
+
+msgid "If you enjoyed the plugin, and want to support:"
+msgstr "このプラグインを気に入って応援したい場合:"
+
+msgid "Hire me"
+msgstr "私に依頼する"
+
+msgid "on a project"
+msgstr "プロジェクトで"
+
+msgid "Buy me a Coffee (donate via PayPal)"
+msgstr "コーヒーをおごる（PayPal で寄付）"
+
+msgid "Wanna say Thanks?"
+msgstr "お礼を言いたいですか？"
+
+msgid "Leave"
+msgstr "ぜひ"
+
+msgid "rating"
+msgstr "の評価を"
+
+msgid "Follow me on X:"
+msgstr "X でフォロー:"
+
+msgid "Got a Problem?"
+msgstr "問題がありますか？"
+
+msgid "Want to report a bug or suggest a feature? You can:"
+msgstr "バグの報告や機能の提案をしたいですか？次のことができます:"
+
+msgid "Create"
+msgstr "作成:"
+
+msgid "Support Ticket"
+msgstr "サポートチケット"
+
+msgid "Write me an"
+msgstr "メッセージはこちら:"
+
+msgid "Email"
+msgstr "メール"
+
+msgid "Developed by:"
+msgstr "開発者:"
+
+msgid "New"
+msgstr "新規"
+
+msgid "Custom fields"
+msgstr "カスタムフィールド"
+
+msgid "Featured image"
+msgstr "アイキャッチ画像"
+
+msgid "Changed"
+msgstr "変更点"
+
+msgid "Snapshot created."
+msgstr "スナップショットを作成しました。"
+
+msgid "Snapshot deleted."
+msgstr "スナップショットを削除しました。"
+
+msgid "Could not create the snapshot."
+msgstr "スナップショットを作成できませんでした。"
+
+msgid "Take a new snapshot"
+msgstr "新しいスナップショットを作成"
+
+msgid "Optional label, e.g. before migration"
+msgstr "任意のラベル（例: 移行前）"
+
+msgid "Take snapshot"
+msgstr "スナップショットを作成"
+
+msgid "Records a fingerprint of every post and page (all types, all languages) so you can detect changes later."
+msgstr "すべての投稿と固定ページ（全タイプ・全言語）のフィンガープリントを記録し、後で変更を検出できるようにします。"
+
+msgid "Saved snapshots"
+msgstr "保存済みスナップショット"
+
+msgid "No snapshots yet. Take your first snapshot above."
+msgstr "まだスナップショットがありません。上で最初のスナップショットを作成してください。"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Compare"
+msgstr "比較"
+
+msgid "Delete this snapshot?"
+msgstr "このスナップショットを削除しますか？"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "with"
+msgstr "と"
+
+msgid "Live site (now)"
+msgstr "現在のサイト"
+
+msgid "Latest vs live site"
+msgstr "最新 対 現在のサイト"
+
+msgid "About Snapshots"
+msgstr "スナップショットについて"
+
+msgid "A snapshot records a lightweight fingerprint of every post, page and custom post type on your site, so you can detect changes later."
+msgstr "スナップショットは、サイト上のすべての投稿・固定ページ・カスタム投稿タイプの軽量なフィンガープリントを記録し、後で変更を検出できるようにします。"
+
+msgid "How to use"
+msgstr "使い方"
+
+msgid "Click \"Take snapshot\" to record the current state."
+msgstr "「スナップショットを作成」をクリックして現在の状態を記録します。"
+
+msgid "Later, use \"Latest vs live site\" to see what changed since then."
+msgstr "後で「最新 対 現在のサイト」を使って、それ以降に変更された点を確認します。"
+
+msgid "Review the highlighted rows; download the differences if needed."
+msgstr "ハイライトされた行を確認し、必要に応じて差分をダウンロードします。"
+
+msgid "Why it helps"
+msgstr "役立つ理由"
+
+msgid "Spot unauthorized or injected posts and pages."
+msgstr "不正な、または挿入された投稿やページを見つけます。"
+
+msgid "Confirm a migration moved everything across."
+msgstr "移行ですべてが移されたことを確認します。"
+
+msgid "Keep an audit trail of content changes over time."
+msgstr "コンテンツ変更の監査履歴を残します。"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "This snapshot was captured with an older version of the plugin, so some differences may be inaccurate. Please take a fresh snapshot for reliable results."
+msgstr "このスナップショットは古いバージョンのプラグインで作成されたため、一部の差分が正確でない場合があります。信頼できる結果を得るには、新しいスナップショットを作成してください。"
+
+msgid "No changes detected."
+msgstr "変更は検出されませんでした。"
+
+msgid "Highlighted rows are worth reviewing if you did not make these changes yourself: newly published pages, or a changed author or status."
+msgstr "ご自身で変更していない場合、ハイライトされた行は確認する価値があります。新しく公開されたページ、または投稿者やステータスの変更です。"
+
+msgid "Download diff (CSV)"
+msgstr "差分をダウンロード（CSV）"
+
+msgid "Download diff (JSON)"
+msgstr "差分をダウンロード（JSON）"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "Snapshots"
+msgstr "スナップショット"
+

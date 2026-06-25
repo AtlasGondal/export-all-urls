@@ -1,15 +1,15 @@
 === Export All URLs ===
 Contributors: Atlas_Gondal
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YWT3BFURG6SGS&source=url
-Tags: extract urls, export urls, links, get links, get urls, custom post type urls, see links, extract title, export title, export post title, export title and url, export category, utilities, export, csv
-Requires at least: 3.1
-Tested up to: 6.7.1
-Stable tag: 5.0
+Tags: export, urls, csv, json, links
+Requires at least: 3.6
+Tested up to: 7.0
+Stable tag: 6.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin enables you to extract information such as Title, URL, Categories, Tags, Author, as well as Published and Modified dates for built-in post types (e.g., post, page) or any other custom post types present on your site. You have the option to display the output in the dashboard or export it as a CSV file. This can be highly beneficial for tasks like migration, SEO analysis, and security audits.
+Export post, page and custom post type data to CSV or JSON, and snapshot your site to detect added, removed or changed content.
 
 == Description ==
 
@@ -18,6 +18,7 @@ This plugin will add a page called "Export All URLs" under Tools. You can naviga
 * ID
 * Title
 * URL
+* Status
 * Categories
 * Category URLs
 * Tags
@@ -25,32 +26,41 @@ This plugin will add a page called "Export All URLs" under Tools. You can naviga
 * Author
 * Published Date
 * Modified Date
-* Status
+* Word Count
+* Excerpt
+* Featured Image URL
+* Comment Count
+* Slug
+* Post Type
+* Language (WPML / Polylang)
+* Translation URLs (WPML / Polylang)
 
-The data can be filtered by post type, post status, date range, and author before extraction, and the plugin also provides the option to export using a specific post range.
+Fields are organized into collapsible groups with quick-select presets, so the picker stays tidy even with this many columns. The data can be filtered by post type, post status, date range, and author before extraction, and the plugin also provides the option to export using a specific post range. Output can be displayed in the dashboard or downloaded as a CSV or JSON file.
 
 == When we need this plugin? ==
 
 * To check all URLs of your website
-* During migration
-* During security audit
-* Need to share All URLs with SEO guy
-* 301 Redirects handling using htaccess
+* During a migration (and to confirm everything was moved across)
+* During a security audit, or to monitor the site for unauthorized or injected content (Snapshots)
+* To share all URLs with your SEO consultant
+* For handling 301 redirects in htaccess
 
 
 == Customizable Features ==
 
-* Filter by Author
-* Filter by Date Range
-* Exclude domain URL (very helpful in comparing results after migration)
-* Set post range (very beneficial in case of timeout/memory out error)
-* Generates CSV file name randomly (sensitive data protection for security reasons)
-* Set preferred CSV file name (provides more control)
+* Choose exactly which columns to export, grouped with quick-select presets
+* Download as CSV or JSON, or display the results in a paginated table
+* Filter by post type, post status, author and date range
+* Export a specific post range (helpful on very large sites)
+* Exclude the domain from URLs (handy when comparing results after a migration)
+* Multilingual support for WPML and Polylang (export all languages or just the default)
+* Custom or randomly generated download file name
+* Snapshots: capture your site and detect what was added, removed or changed over time
 
 = System requirements =
 
 * PHP version 5.4 or higher
-* Wordpress version 3.1.0 or higher
+* WordPress version 3.6 or higher
 
 
 If you encounter any bugs, please report them to me, and I will strive to resolve them as quickly as possible!
@@ -71,71 +81,107 @@ For further information please send me an [email](https://AtlasGondal.com/contac
 
 1. Download Export All URLs.
 2. Unzip plugin.
-2. Upload the 'Export All URLs' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
-3. Activate Export All URLs from your Plugins page.
+3. Upload the 'Export All URLs' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
+4. Activate Export All URLs from your Plugins page.
 
 = Usage =
 
-1. Go to Tools > Export All URLs to export URLs of your website.
-2. Select Post Type
-3. Choose Data (e.g Post ID, Title, URL, Categories, Tags, Author, Published Date, Modified Date)
-4. Apply Filters (e.g Post Status, Author, Post Range)
-5. Configure advance options (e.g exclude domain url, number of posts)
-5. Finally Select Export type and click on Export Now.
+Exporting data:
+
+1. Go to Tools > Export All URLs.
+2. On the Export tab, choose a post type and tick the fields you want (or use a preset such as "SEO basics").
+3. Optionally filter by post status, author or date range, and set advanced options (exclude domain, post range, file name, language).
+4. Click "Download" to get a CSV or JSON file, or "Display Here" to view the results in a paginated table.
+
+Detecting changes:
+
+1. Open the Snapshots tab and click "Take snapshot".
+2. Later, use "Latest vs live site" (or compare any two snapshots) to see what was added, removed or changed.
+3. Download the differences as CSV or JSON if you need them.
 
 = Uninstalling: =
 
 1. In the Admin Panel, go to "Plugins" and deactivate the plugin.
-2. Go to the "plugins" folder of your WordPress directory and delete the files/folder for this plugin.
+2. Click "Delete" on the Plugins page. This removes the plugin files and its snapshot tables automatically.
 
 
 == Frequently Asked Questions ==
 
-= About Plugin Support? =
+= What data can I export? =
 
-Post your question on support forum and we will try to answer your question as quick as possible.
+For every post, page or custom post type you can export the Post ID, Title, URL, Status, Categories and Category URLs, Tags and Tag URLs, Author, Published and Modified dates, Word Count, Excerpt, Featured Image URL, Comment Count, Slug, Post Type, and (on multilingual sites) the Language and Translation URLs. Choose exactly the columns you want using the grouped checkboxes and quick-select presets.
 
-= Why did you make this plugin?  =
+= Can I export to JSON as well as CSV? =
 
-We couldn't find a plugin that would export all URLs, titles and categories in a simplest possible way. So, we decided to take step further to fill this gap.
+Yes. You can download the data as a CSV file, download it as JSON, or display it in a paginated table right inside the dashboard.
 
-= Why the file name is randomly generated?  =
+= What is the Snapshots feature? =
 
-Exporting a file with a static name makes it easier for malicious attackers to discover, potentially leading to the leakage of sensitive information. Therefore, we chose to generate random names, which are more difficult to guess. Nonetheless, the plugin offers full control over the file name if needed.
+A snapshot records a lightweight fingerprint (a hash, not a copy) of every post, page and custom post type on your site. Later you can compare two snapshots, or compare your latest snapshot against the live site, to see exactly what was added, removed or modified - including which posts changed in title, content, status, author, slug, taxonomy, custom fields or featured image.
 
-= Can I delete generated CSV file?  =
+= How can I tell if my site was changed or compromised? =
 
-Yes, absolutely. It is highly recommended, once the file is generated, there is a direct link to delete the generated file.
+Take a snapshot when everything looks correct, then run "Latest vs live site" whenever you want to check. Newly published pages and author or status changes are highlighted as "Notable", because those are common signs of injected or unauthorized content. The differences can be downloaded as CSV or JSON.
 
-= Does Export All URLs make changes to the database? =
+= Does it work with custom post types and WooCommerce? =
 
-No, the plugin does not interact with the database, as it does not have any settings or configurations to store.
+Yes. Both the export and the snapshots cover all public post types - including WooCommerce products and any other custom post type - not just posts and pages.
 
-= How can I check out if the plugin works for me? =
+= Does it support multilingual sites (WPML / Polylang)? =
 
-Install and activate. Go to Tools / Export All URLs. Select all options and download CSV file.
+Yes. The export has a "Languages" option to export all languages or just the default one, regardless of the language selected in the admin bar, and can add Language and Translation URL columns. Snapshots always capture every language.
 
-= Which PHP version do I need? =
+= Will it work on a large site without timing out? =
 
-This plugin has been tested and works with PHP versions 5.4 and greater. WordPress itself [recommends using PHP version 7.3 or greater](https://wordpress.org/about/requirements/). If you're using a PHP version lower than 5.4 please upgrade your PHP version or contact your Server administrator.
+The export and snapshot operations read posts in batches and stream results out as they go, so memory stays bounded no matter how many posts you have. Snapshots use keyset pagination and prime caches in bulk to stay fast on large tables. You can also export a specific post range to keep each request small.
 
-= Are there any known incompatibilities? =
+= Is the exported CSV safe to open in Excel? =
 
-Nope, there were some issues in past, but they were fixed in version 4.0.
+Yes. Cell values that begin with =, +, - or @ are neutralized, so a malicious value cannot run as a spreadsheet formula when the file is opened.
 
-= Are there any server requirements? =
+= Does the plugin modify the database? =
 
-Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0 or higher.
+The export feature does not touch the database. The optional Snapshots feature stores hashed fingerprints in two custom tables so it can detect changes over time; those tables are removed automatically when you uninstall the plugin.
+
+= Which PHP and WordPress versions are required? =
+
+PHP 5.4 or higher and WordPress 3.6 or higher. The plugin has been tested up to current versions. WordPress itself [recommends PHP version 7.4 or greater](https://wordpress.org/about/requirements/).
 
 == Screenshots ==
 
-1. Admin screenshot of Export All URLs
-2. Exported data in the dashboard
-3. Exported data to a CSV file
-4. CSV File Preview
+1. The Export tab - pick a post type and choose fields from collapsible groups with quick-select presets
+2. Results shown right in the dashboard - every URL in a paginated table
+3. The export as a spreadsheet-ready CSV file
+4. ...or as structured JSON for scripts and integrations
+5. Snapshots compared - added, removed and modified content highlighted, with notable changes flagged
+6. The snapshot diff exported to CSV
+7. ...and the same diff as JSON
+
 
 
 == Changelog ==
+
+= 6.0 =
+* New - Snapshots: fingerprint your whole site and compare two snapshots to see what was added, removed or changed - with new pages and author/status changes flagged as possible signs of a compromise. Export diffs to CSV or JSON.
+* New - export Word Count, Excerpt, Featured Image URL, Comment Count, Slug and Post Type
+* New - multilingual support (WPML / Polylang): export all languages or just the default, plus optional Language and Translation URL columns
+* New - JSON download format, alongside CSV and on-screen display
+* New - field picker grouped into collapsible sections with quick-select presets; remembers your last selection
+* New - on-screen results table now shows every row with pagination and a "Results per page" selector
+* New - bundled translations for German, French, Russian, Japanese, Urdu and Pakistani Punjabi; the whole interface is now translatable (POT included)
+* Improvement - exports run in batches to prevent timeouts and memory errors on large sites
+* Improvement - rewritten on a modular architecture, still PHP 5.4 compatible
+* Improvement - the form preserves your inputs and keeps the relevant sections expanded after submit
+* Improvement - tidied the support sidebar
+* Improvement - CSV and JSON downloads stream straight to the browser, leaving nothing behind in wp-content/uploads
+* Security - CSV formula-injection protection
+* Security - hardened output escaping, nonce verification and input sanitization across all screens
+* Compatibility - resolved WordPress Coding Standards / Plugin Check issues
+* Fix - restored genuine PHP 5.4 compatibility
+
+= 5.1 =
+* Improvement - strengthened csv file name to prevent unauthorized discovery
+* Compatibility - tested with Wordpress 6.9.1
 
 = 5.0 =
 * New - additional export fields added (status, category urls, tag urls)
@@ -241,8 +287,22 @@ Yes. The plugin requires a PHP version 5.4 or higher and Wordpress version 3.1.0
 
 == Upgrade Notice ==
 
-= 5.0 =
-* New - additional export fields added (status, category urls, tag urls)
-* New - allows multiple post status selection
-* Improvement - few backend refinements to improve performance
-* Compatibility - tested with Wordpress 6.7.1
+= 6.0 =
+Our biggest release in 10 years. Export All URLs has grown from a simple exporter into a security tool too: alongside CSV/JSON exports, 19 fields and WPML/Polylang support, new Snapshots detect added, removed or unauthorized changes to your site. A full modern rewrite, now available in 6 languages, still compatible back to PHP 5.4.
+
+* New - Snapshots: fingerprint your whole site and compare two snapshots to see what was added, removed or changed - with new pages and author/status changes flagged as possible signs of a compromise. Export diffs to CSV or JSON.
+* New - export Word Count, Excerpt, Featured Image URL, Comment Count, Slug and Post Type
+* New - multilingual support (WPML / Polylang): export all languages or just the default, plus optional Language and Translation URL columns
+* New - JSON download format, alongside CSV and on-screen display
+* New - field picker grouped into collapsible sections with quick-select presets; remembers your last selection
+* New - on-screen results table now shows every row with pagination and a "Results per page" selector
+* New - bundled translations for German, French, Russian, Japanese, Urdu and Pakistani Punjabi; the whole interface is now translatable (POT included)
+* Improvement - exports run in batches to prevent timeouts and memory errors on large sites
+* Improvement - rewritten on a modular architecture, still PHP 5.4 compatible
+* Improvement - the form preserves your inputs and keeps the relevant sections expanded after submit
+* Improvement - tidied the support sidebar
+* Improvement - CSV and JSON downloads stream straight to the browser, leaving nothing behind in wp-content/uploads
+* Security - CSV formula-injection protection
+* Security - hardened output escaping, nonce verification and input sanitization across all screens
+* Compatibility - resolved WordPress Coding Standards / Plugin Check issues
+* Fix - restored genuine PHP 5.4 compatibility

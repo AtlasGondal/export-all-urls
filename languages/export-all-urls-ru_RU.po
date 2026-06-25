@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Export All URLs 6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/export-all-urls/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "Below is a list of Exported Data:"
+msgstr "Ниже приведён список экспортированных данных:"
+
+msgid "Total number of links"
+msgstr "Общее количество ссылок"
+
+msgid "Results per page:"
+msgstr "Результатов на странице:"
+
+msgid "All"
+msgstr "Все"
+
+msgid "Previous"
+msgstr "Назад"
+
+msgid "Next"
+msgstr "Вперёд"
+
+msgid "Core"
+msgstr "Основное"
+
+msgid "Taxonomy"
+msgstr "Таксономия"
+
+msgid "Author & Dates"
+msgstr "Автор и даты"
+
+msgid "Content"
+msgstr "Содержимое"
+
+msgid "Multilingual"
+msgstr "Многоязычность"
+
+msgid "The \"Language\" column is each post's own language. The \"Translation URLs\" column lists the URL of every available translation of that post."
+msgstr "Столбец «Язык» — это собственный язык записи. Столбец «URL переводов» содержит URL каждого доступного перевода этой записи."
+
+msgid "SEO basics"
+msgstr "Основы SEO"
+
+msgid "Full audit"
+msgstr "Полный аудит"
+
+msgid "None"
+msgstr "Нет"
+
+msgid "Post ID"
+msgstr "ID записи"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Categories"
+msgstr "Рубрики"
+
+msgid "Category URLs"
+msgstr "URL рубрик"
+
+msgid "Tags"
+msgstr "Метки"
+
+msgid "Tag URLs"
+msgstr "URL меток"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Published Date"
+msgstr "Дата публикации"
+
+msgid "Modified Date"
+msgstr "Дата изменения"
+
+msgid "Word Count"
+msgstr "Количество слов"
+
+msgid "Excerpt"
+msgstr "Отрывок"
+
+msgid "Featured Image URL"
+msgstr "URL изображения записи"
+
+msgid "Comment Count"
+msgstr "Количество комментариев"
+
+msgid "Slug"
+msgstr "Ярлык"
+
+msgid "Post Type"
+msgstr "Тип записи"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Translation URLs"
+msgstr "URL переводов"
+
+msgid "No result found in that range, please reselect and try again!"
+msgstr "В этом диапазоне ничего не найдено, пожалуйста, измените выбор и попробуйте снова!"
+
+msgid "Export All URLs"
+msgstr ""
+
+msgid "Sorry, you missed something. Please recheck the options, especially <strong>Export Fields</strong>, and try again. :)"
+msgstr "Чего-то не хватает. Пожалуйста, проверьте параметры, особенно <strong>Поля экспорта</strong>, и попробуйте снова. :)"
+
+msgid "Invalid/Missing CSV File Name!"
+msgstr "Неверное или отсутствующее имя CSV-файла!"
+
+msgid "Sorry, invalid post date range. :)"
+msgstr "Неверный диапазон дат записей. :)"
+
+msgid "Change"
+msgstr "Изменение"
+
+msgid "Details"
+msgstr "Подробности"
+
+msgid "Notable"
+msgstr "На проверку"
+
+msgid "Added"
+msgstr "Добавлено"
+
+msgid "Removed"
+msgstr "Удалено"
+
+msgid "Modified"
+msgstr "Изменено"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "You do not have sufficient permissions to access this page."
+msgstr "У вас недостаточно прав для доступа к этой странице."
+
+msgid "Security token validation failed!"
+msgstr "Проверка токена безопасности не удалась!"
+
+msgid "Invalid export type."
+msgstr "Недопустимый тип экспорта."
+
+msgid "Could not activate plugin: PHP version error"
+msgstr "Не удалось активировать плагин: ошибка версии PHP"
+
+msgid "PLUGIN:"
+msgstr "ПЛАГИН:"
+
+msgid "You are using PHP version"
+msgstr "Вы используете версию PHP"
+
+msgid "This plugin requires PHP version %s or greater."
+msgstr "Для этого плагина требуется PHP версии %s или выше."
+
+msgid "WordPress itself recommends using PHP version 7.4 or greater"
+msgstr "WordPress рекомендует использовать PHP версии 7.4 или выше"
+
+msgid "Official WordPress requirements"
+msgstr "Официальные требования WordPress"
+
+msgid "Please upgrade your PHP version or contact your Server administrator."
+msgstr "Пожалуйста, обновите версию PHP или обратитесь к администратору сервера."
+
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr "Понравился %1$s? Пожалуйста, оставьте нам оценку %2$s. Мы очень ценим вашу поддержку!"
+
+msgid "All Types (pages, posts, and custom post types)"
+msgstr "Все типы (страницы, записи и произвольные типы записей)"
+
+msgid "Pages"
+msgstr "Страницы"
+
+msgid "Posts"
+msgstr "Записи"
+
+msgid "Published"
+msgstr "Опубликовано"
+
+msgid "Pending"
+msgstr "На утверждении"
+
+msgid "Draft & Auto Draft"
+msgstr "Черновик и авточерновик"
+
+msgid "Future Scheduled"
+msgstr "Запланировано"
+
+msgid "Private"
+msgstr "Личное"
+
+msgid "Trashed"
+msgstr "В корзине"
+
+msgid "All (Published, Pending, Draft, Future Scheduled, Private & Trash)"
+msgstr "Все (Опубликовано, На утверждении, Черновик, Запланировано, Личное и Корзина)"
+
+msgid "CSV File"
+msgstr "CSV-файл"
+
+msgid "JSON File"
+msgstr "JSON-файл"
+
+msgid "Hide Filter Options"
+msgstr "Скрыть параметры фильтра"
+
+msgid "Show Filter Options"
+msgstr "Показать параметры фильтра"
+
+msgid "Hide Advanced Options"
+msgstr "Скрыть расширенные параметры"
+
+msgid "Show Advanced Options"
+msgstr "Показать расширенные параметры"
+
+msgid "Export Data from your Site"
+msgstr "Экспорт данных с вашего сайта"
+
+msgid "Select a Post Type to Extract Data:"
+msgstr "Выберите тип записи для извлечения данных:"
+
+msgid "Export Fields:"
+msgstr "Поля экспорта:"
+
+msgid "Presets:"
+msgstr "Предустановки:"
+
+msgid "Select all"
+msgstr "Выбрать все"
+
+msgid "Post Status:"
+msgstr "Статус записи:"
+
+msgid "Languages:"
+msgstr "Языки:"
+
+msgid "All languages"
+msgstr "Все языки"
+
+msgid "Default language only"
+msgstr "Только язык по умолчанию"
+
+msgid "Controls which languages are exported, regardless of the language selected in the admin bar."
+msgstr "Определяет, какие языки экспортируются, независимо от языка, выбранного в панели администратора."
+
+msgid "Date Range:"
+msgstr "Диапазон дат:"
+
+msgid "From:"
+msgstr "С:"
+
+msgid "To:"
+msgstr "По:"
+
+msgid "By Author:"
+msgstr "По автору:"
+
+msgid "Exclude Domain URL:"
+msgstr "Исключить домен из URL:"
+
+msgid "Enable this option to remove the domain from URLs, e.g., 'example.com/sample-post/' becomes '/sample-post/'"
+msgstr "Включите этот параметр, чтобы удалить домен из URL, например 'example.com/sample-post/' станет '/sample-post/'"
+
+msgid "Number of Posts:"
+msgstr "Количество записей:"
+
+msgid "Specify Post Range to Extract, It is very useful in case of Memory Out Error!"
+msgstr "Укажите диапазон записей для извлечения. Очень полезно при ошибке нехватки памяти!"
+
+msgid "Specify Range"
+msgstr "Указать диапазон"
+
+msgid "Download File Name:"
+msgstr "Имя загружаемого файла:"
+
+msgid "Download Format:"
+msgstr "Формат загрузки:"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "Display Here"
+msgstr "Показать здесь"
+
+msgid "Want to Support?"
+msgstr "Хотите поддержать?"
+
+msgid "If you enjoyed the plugin, and want to support:"
+msgstr "Если вам понравился плагин и вы хотите поддержать:"
+
+msgid "Hire me"
+msgstr "Наймите меня"
+
+msgid "on a project"
+msgstr "для проекта"
+
+msgid "Buy me a Coffee (donate via PayPal)"
+msgstr "Купите мне кофе (пожертвовать через PayPal)"
+
+msgid "Wanna say Thanks?"
+msgstr "Хотите сказать спасибо?"
+
+msgid "Leave"
+msgstr "Оставьте"
+
+msgid "rating"
+msgstr "оценку"
+
+msgid "Follow me on X:"
+msgstr "Подпишитесь на меня в X:"
+
+msgid "Got a Problem?"
+msgstr "Возникла проблема?"
+
+msgid "Want to report a bug or suggest a feature? You can:"
+msgstr "Хотите сообщить об ошибке или предложить функцию? Вы можете:"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Support Ticket"
+msgstr "тикет поддержки"
+
+msgid "Write me an"
+msgstr "Напишите мне"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Developed by:"
+msgstr "Разработано:"
+
+msgid "New"
+msgstr "Новое"
+
+msgid "Custom fields"
+msgstr "Произвольные поля"
+
+msgid "Featured image"
+msgstr "Изображение записи"
+
+msgid "Changed"
+msgstr "Изменено"
+
+msgid "Snapshot created."
+msgstr "Снимок создан."
+
+msgid "Snapshot deleted."
+msgstr "Снимок удалён."
+
+msgid "Could not create the snapshot."
+msgstr "Не удалось создать снимок."
+
+msgid "Take a new snapshot"
+msgstr "Создать новый снимок"
+
+msgid "Optional label, e.g. before migration"
+msgstr "Необязательная метка, напр. перед миграцией"
+
+msgid "Take snapshot"
+msgstr "Создать снимок"
+
+msgid "Records a fingerprint of every post and page (all types, all languages) so you can detect changes later."
+msgstr "Записывает отпечаток каждой записи и страницы (все типы, все языки), чтобы позже обнаруживать изменения."
+
+msgid "Saved snapshots"
+msgstr "Сохранённые снимки"
+
+msgid "No snapshots yet. Take your first snapshot above."
+msgstr "Снимков пока нет. Создайте первый снимок выше."
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Label"
+msgstr "Метка"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "Compare"
+msgstr "Сравнить"
+
+msgid "Delete this snapshot?"
+msgstr "Удалить этот снимок?"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "with"
+msgstr "с"
+
+msgid "Live site (now)"
+msgstr "Действующий сайт (сейчас)"
+
+msgid "Latest vs live site"
+msgstr "Последний и действующий сайт"
+
+msgid "About Snapshots"
+msgstr "О снимках"
+
+msgid "A snapshot records a lightweight fingerprint of every post, page and custom post type on your site, so you can detect changes later."
+msgstr "Снимок записывает компактный отпечаток каждой записи, страницы и произвольного типа записи на вашем сайте, чтобы позже обнаруживать изменения."
+
+msgid "How to use"
+msgstr "Как использовать"
+
+msgid "Click \"Take snapshot\" to record the current state."
+msgstr "Нажмите «Создать снимок», чтобы записать текущее состояние."
+
+msgid "Later, use \"Latest vs live site\" to see what changed since then."
+msgstr "Позже используйте «Последний и действующий сайт», чтобы увидеть, что изменилось с тех пор."
+
+msgid "Review the highlighted rows; download the differences if needed."
+msgstr "Просмотрите выделенные строки и при необходимости скачайте различия."
+
+msgid "Why it helps"
+msgstr "Чем это полезно"
+
+msgid "Spot unauthorized or injected posts and pages."
+msgstr "Выявляйте несанкционированные или внедрённые записи и страницы."
+
+msgid "Confirm a migration moved everything across."
+msgstr "Убедитесь, что миграция перенесла всё."
+
+msgid "Keep an audit trail of content changes over time."
+msgstr "Ведите журнал изменений содержимого со временем."
+
+msgid "Result"
+msgstr "Результат"
+
+msgid "This snapshot was captured with an older version of the plugin, so some differences may be inaccurate. Please take a fresh snapshot for reliable results."
+msgstr "Этот снимок был создан более старой версией плагина, поэтому некоторые различия могут быть неточными. Пожалуйста, создайте новый снимок для надёжных результатов."
+
+msgid "No changes detected."
+msgstr "Изменений не обнаружено."
+
+msgid "Highlighted rows are worth reviewing if you did not make these changes yourself: newly published pages, or a changed author or status."
+msgstr "Выделенные строки стоит проверить, если вы не вносили эти изменения сами: недавно опубликованные страницы либо изменённый автор или статус."
+
+msgid "Download diff (CSV)"
+msgstr "Скачать различия (CSV)"
+
+msgid "Download diff (JSON)"
+msgstr "Скачать различия (JSON)"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Snapshots"
+msgstr "Снимки"
+
